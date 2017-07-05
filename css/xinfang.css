@@ -1,0 +1,217 @@
+/*banner*/
+.swiper-container{width:100%;height:520px;overflow:hidden;margin-top:118px;text-align:center;}
+.swiper-container .swiper-wrapper{width:100%;height:100%;}
+.swiper-container .swiper-slide{width:100%;height:100%;background-size:cover;}
+.swiper-container .swiper-slide a{width:100%;height:100%;display:block;}
+.swiper-container .swiper-slide1{background:url("../images/banner.png") no-repeat center;}
+.swiper-container .swiper-slide2{background:url("../images/ban2.jpg") no-repeat center;}
+.swiper-container .swiper-slide3{background:url("../images/ban3.jpg") no-repeat center;}
+/*.banner img{width:1920px;height:600px;margin:0 auto;}*/
+
+/*banner 兼容IE8*/
+.bannerIE{width:100%;width:1920px;height:520px;overflow:hidden;margin-top:118px;text-align:center;position:relative;overflow:hidden;}
+.bannerIE ul{width:100%;width:1920px;height:100%;position:absolute;left:0;top:0;z-index:10;}
+.bannerIE ul li{width:100%;width:1920px;height:100%;background-size:cover;float:left;}
+.bannerIE ul li a{width:100%;width:1920px;height:100%;display:block;}
+.bannerIE ul .li1{background:url("../images/banner.png") no-repeat center;}
+.bannerIE ul .li2{background:url("../images/ban2.jpg") no-repeat center;}
+.bannerIE ul .li3{background:url("../images/ban3.jpg") no-repeat center;}
+.bannerIE span{width:50px;height:100px;line-height:100px;color:#3784CB;position:absolute;display:block;top:50%;margin-top:-50px;font-size:38px;display:none;
+    cursor:pointer;z-index:20;background:#eee;}
+.bannerIE span.preBtn{left:10px;text-align:left;}
+.bannerIE span.nextBtn{right:20px;text-align:right;}
+.bannerIE:hover span{display:block;}
+.bannerIE ol{display:inline-block;position:absolute;width:100%;height:18px;bottom:8px;z-index:20;left:50%;text-align:center;}
+.bannerIE ol li{width:18px;height:18px;display:inline-block;background:#34433e;color:#fff;line-height:18px;margin-right:4px;float:left;border-radius:50%;font-size:12px;cursor:pointer;}
+.bannerIE ol .ac{background:#007AFF;}
+.center{width:100%;margin:118px auto 0;overflow:hidden;}
+
+/*报价*/
+.baojia{width:100%;}
+.baojia .inner{height:232px;margin:84px auto 0;}
+.baojia .inner .txt{float:left;width:282px;height:190px;background:#f5c71a;margin:20px 0 0 20px;text-align:center;color:#fff;}
+.baojia .inner .txt img{padding-top:19px;}
+.baojia .inner .txt h3{font-weight:normal;height:36px;line-height:36px;padding-top:9px;font-size:30px;font-family:"汉仪力量黑简"; }
+.baojia .inner .txt p{height:22px;line-height:22px;padding-top:3px;}
+/*报价 表单*/
+.baojia .inner form{float:left;margin:20px 0 0 39px;}
+.baojia .inner form ul{width:53px;float:left;}
+.baojia .inner form ul li{text-align:center;margin:15px 17px 45px 0;width:36px;}
+/*.baojia .inner form ul li input{width:15px;height:15px;border:2px solid #000;background:#f5c71a;display:inline-block;color:#f5c71a;}*/
+.baojia .inner form ul li span{display:inline-block;width:15px;height:15px;border:2px solid #000;border-radius:50%;}
+.baojia .inner form ul li h6{font-size:18px;color:#0c0c0c;}
+.baojia .inner form ul .active{}
+.baojia .inner form ul .active span{background:#f5c71a;border:2px solid #f5c71a; }
+.baojia .inner form .right{float:left;width:495px;margin-top:10px;}
+.baojia .inner form .right label{width:215px;height:47px;line-height:47px;border:1px solid #0c0c0c;border-radius:5px;float:left;margin:0 58px 15px 0;margin-right:25px\9;}
+.baojia .inner form .right label img{margin:11px 0 0 8px;float:left;}
+.baojia .inner form .right label span{width:1px;height:24px;background:#505050;display:block;margin:13px 0 0 8px;float:left;}
+.baojia .inner form .right label input{float:left;width:120px;padding:5px 10px;height:37px;height:35px;line-height:35px;color:#515151;}
+.baojia .inner form .right label:nth-child(2){margin-right:0;margin-right:0\9;}
+.baojia .inner form .right label:nth-child(4){margin-right:0;margin-right:0\9;}
+.baojia .inner form .right label:last-child{}
+.baojia .inner form .right label:nth-child(4) input{border-radius:8px 0 0 8px;}
+.baojia .inner form .right label .yanzheng{width:75px;height:47px;background:#ecca13;border-radius:0 8px 8px 0;float:right;display:inline;}
+.baojia .inner form .right .jisuan{width:100%;width:93%\9;height:43px;line-height:43px;border-radius:8px;background:#ecca13;cursor:pointer;}
+.baojia .inner form .right .zixun{width:100%;height:31px;line-height:31px;color:#747474;display:inline-block;text-align:center;}
+/*报价 右*/
+.baojia .inner .people{float:left;width:230px;margin:30px 0 0 37px;border:1px solid #f5c71a;text-align:center;overflow:hidden;}
+.baojia .inner .people marquee{width:100%;height:120px;margin:0;padding:0;display:block;padding-left:10px;overflow:hidden;}
+.baojia .inner .people table{width:100%;overflow:hidden;}
+.baojia .inner .people .thead{width:100%;height:59px;line-height:59px;background:#f5c71a;color:#fff;position:relative;font-size:16px;}
+.baojia .inner .people .thead strong{color:#000;font-size:18px;}
+/*.baojia .inner .people table tbody{}
+.baojia .inner .people table tbody tr{color:#535353;height:28px;line-height:28px;font-size:16px;}
+.baojia .inner .people table tbody tr td:nth-child(1){width:20%;}
+.baojia .inner .people table tbody tr td:nth-child(2){width:40%;}
+.baojia .inner .people table tbody tr td:nth-child(3){width:40%;color:#f5c71a;}*/
+.baojia .inner .people .people-cont{width:228px;height:122px;border:1px solid #f5c71a;overflow:hidden;position:relative;}
+.baojia .inner .people .people-cont ul{position:absolute;left:0;width:100%;}
+.baojia .inner .people .people-cont ul li{color:#535353;height:28px;line-height:28px;font-size:16px;}
+.baojia .inner .people .people-cont ul li span{height:28px;line-height:28px;display:inline-block;}
+.baojia .inner .people .people-cont ul li span:nth-child(1){width:20%;}
+.baojia .inner .people .people-cont ul li span:nth-child(2){width:40%;}
+.baojia .inner .people .people-cont ul li span:nth-child(3){width:40%;color:#f5c71a;}
+/*品质*/
+.pingzhi{width:100%;}
+.pingzhi .inner{}
+.pingzhi .inner ul{margin-left:57px;}
+.pingzhi .inner ul li{width:145px;float:left;margin-right:44px;text-align:center;}
+.pingzhi .inner ul li img{transition:all 0.3s linear;}
+.pingzhi .inner ul li:hover img{transform:scale(0.8,0.8);}
+.pingzhi .inner ul li h5{height:25px;line-height:25px;font-size:18px;color:#676767;padding-top:9px;font-weight:normal;padding:20px 0 53px 0;}
+/*标题文字*/
+.p-title{width:100%;height:150px;background:#f4c61b;position:relative;text-align:center;color:#fff;}
+.p-title:before{content:"";width:0;height:0;border:30px solid transparent;border-top:30px solid #fff;position:absolute;top:0;left:50%;margin-left:-15px;z-index:10;}
+.p-title h2{height:40px;line-height:40px;padding-top:60px;font-size:34px;}
+.p-title p{height:18px;line-height:18px;padding-top:2px;font-size:15px;}
+/*空间*/
+.kongjian{width:100%;}
+.kongjian .picText{width:1103px;margin:0 auto 86px;overflow:hidden;}
+.kongjian .picText .text{height:52px;width:100%;background:#e8e8e8;color:#171717;}
+.kongjian .picText .text li{width:20%;height:52px;line-height:52px;text-align:center;font-size:18px;float:left;cursor:pointer;}
+.kongjian .picText .text li:hover,.kongjian .picText .text .active{color:#fff;background:#f4c61b;box-shadow:0 0 8px 0 #c1c1c1;}
+.kongjian .picText .pic{width:100%;height:520px;position:relative;}
+.kongjian .picText .pic li{width:100%;height:520px;position:absolute;top:0;left:0;}
+.kongjian .picText .pic li img{width:100%;height:100%;}
+/*全包*/
+.quanbao{width:100%;background:#e8e8e8;}
+.quanbao .wrap{width:1166px;margin:0 auto;text-align:center;}
+.quanbao .wrap .picText{margin-top:54px;}
+.quanbao .wrap .picText ul{}
+.quanbao .wrap .picText ul li{width:190px;height:131px;float:left;margin:0 4px 4px 0;}
+.quanbao .wrap .picText ul li:nth-child(6),.quanbao .wrap .picText ul li:nth-child(12){margin-right:0;}
+.quanbao .wrap .picText ul .pic{}
+.quanbao .wrap .picText ul .pic img{}
+.quanbao .wrap .picText ul .text{background:#fff;color:#070707;}
+.quanbao .wrap .picText ul .text p{height:38px;line-height:38px;padding-top:16px;font-size:28px;color:#ecc414;}
+.quanbao .wrap .picText ul .text h5{height:24px;line-height:24px;padding-top:7px;font-size:16px;}
+.quanbao .wrap .picText ul .text h6{height:19px;line-height:19px;font-size:14px;}
+.quanbao .wrap .picText .zixun{width:196px;height:50px;display:inline-block;line-height:50px;background:#f4c61b;color:#0b0500;border-radius:8px;margin:37px auto;}
+/*全免*/
+.quanmian{width:100%;}
+.quanmian .picText{margin:15px 0 12px 22px;height:129px;}
+.quanmian .picText li{width:190px;float:left;text-align:center;border-right:2px solid #cacaca;}
+.quanmian .picText li:last-child{border-right:none;}
+.quanmian .picText li img{padding-top:16px;}
+.quanmian .picText li h5{padding-top:16px;height:26px;line-height:26px;font-size:18px;font-weight:normal;color:#636363;}
+/*工艺*/
+.gongyi{width:100%;}
+.gongyi .inner .top{margin-top:43px;width:100%;}
+.gongyi .inner .top li{width:50%;height:365px;float:left;}
+.gongyi .inner .top .text{}
+.gongyi .inner .top .text h4{padding:129px 0 0 60px;height:39px;line-height:39px;color:#f4c81d;font-size:28px;font-weight:normal;}
+.gongyi .inner .top .text .line{width:40px;height:3px;background:#f4c81d;margin:9px 0 0 60px;}
+.gongyi .inner .top .text p{padding-left:60px;width:480px;line-height:37px;color:#656565;font-size:16px;}
+/*工艺 房*/
+.gongyi .inner .fang{margin:151px auto 69px;}
+.gongyi .inner .fang .bg{width:849px;height:503px;margin:0 auto;background:url("../images/xinfang-gongyi-fangIMG.png") no-repeat;position:relative;}
+.gongyi .inner .fang .bg ul{}
+.gongyi .inner .fang .bg ul li{float:left;position:absolute;text-align:center;}
+.gongyi .inner .fang .bg ul li .square{width:238px;height:104px;background:#f4c61b;color:#200000;/*display:none;*/opacity:0;}
+.gongyi .inner .fang .bg ul li .square h4{height:21px;line-height:21px;padding-top:15px;font-size:20px;}
+.gongyi .inner .fang .bg ul li .square p{width:215px;height:17px;line-height:17px;padding-top:10px;margin:0 auto;font-size:12px;text-align:left; }
+.gongyi .inner .fang .bg ul li .circle{color:#fff;width:52px;height:52px;line-height:52px;text-align:center;background:#f4c61b;border-radius:50%;font-size:20px;cursor:pointer;}
+.gongyi .inner .fang .bg ul li .circle:before{/*display:none;*/opacity:0;/*transition:all 0.3s linear;*/}
+.gongyi .inner .fang .bg ul li .circle:after{/*display:none;*/opacity:0;/*transition:all 0.3s linear;*/}
+.gongyi .inner .fang .bg ul li .circle:hover:before{/*display:block;*/opacity:1;}
+.gongyi .inner .fang .bg ul li .circle:hover:after{/*display:block;*/opacity:1;}
+
+/*工艺 房 泥水*/
+.gongyi .inner .fang .bg ul .nishui{width:238px;height:188px;top:-12px;left:-31px;}
+.gongyi .inner .fang .bg ul .nishui .square{float:left;position:absolute;top:0;left:0;*/}
+.gongyi .inner .fang .bg ul .nishui .circle{float:left;margin-top:32px;position:absolute;bottom:0;left:121px;z-index:10;}
+.gongyi .inner .fang .bg ul .nishui .circle:before{content:"";width:1px;height:32px;border-left:1px dashed #f4c61b;position:absolute;top:-32px;left:25px;}
+/*工艺 房 电路*/
+.gongyi .inner .fang .bg ul .dianlu{width:300px;height:142px;top:-35px;left:288px;}
+.gongyi .inner .fang .bg ul .dianlu .square{float:right;}
+.gongyi .inner .fang .bg ul .dianlu .circle{float:left;margin-top:88px;position:relative;}
+.gongyi .inner .fang .bg ul .dianlu .circle:before{content:"";width:1px;height:32px;border-left:1px dashed #f4c61b;position:absolute;top:-32px;left:25px;}
+.gongyi .inner .fang .bg ul .dianlu .circle:after{content:"";width:32px;height:1px;border-top:1px dashed #f4c61b;position:absolute;top:-32px;left:25px;}
+/*工艺 房 墙漆*/
+.gongyi .inner .fang .bg ul .qiangqi{width:373px;height:104px;top:60px;right:-52px;}
+.gongyi .inner .fang .bg ul .qiangqi .square{float:right;}
+.gongyi .inner .fang .bg ul .qiangqi .circle{float:left;margin-top:18px;position:relative;}
+.gongyi .inner .fang .bg ul .qiangqi .circle:before{content:"";width:80px;height:1px;border-top:1px dashed #f4c61b;position:absolute;top:26px;right:-80px;}
+/*工艺 房 成品*/
+.gongyi .inner .fang .bg ul .chengpin{width:348px;height:104px;top:191px;left:-136px;z-index:20;}
+.gongyi .inner .fang .bg ul .chengpin .square{float:left;}
+.gongyi .inner .fang .bg ul .chengpin .circle{float:right;margin-top:32px;position:relative;}
+.gongyi .inner .fang .bg ul .chengpin .circle:before{content:"";width:80px;height:1px;border-top:1px dashed #f4c61b;position:absolute;top:26px;left:-80px;}
+/*工艺 房 水路*/
+.gongyi .inner .fang .bg ul .shuilu{width:332px;height:232px;bottom:74px;left:50px;}
+.gongyi .inner .fang .bg ul .shuilu .square{float:left;margin-top:129px;}
+.gongyi .inner .fang .bg ul .shuilu .circle{float:right;position:relative;}
+.gongyi .inner .fang .bg ul .shuilu .circle:before{content:"";width:1px;height:100px;border-left:1px dashed #f4c61b;position:absolute;bottom:-100px;left:26px;}
+.gongyi .inner .fang .bg ul .shuilu .circle:after{content:"";width:63px;height:1px;border-top:1px dashed #f4c61b;position:absolute;bottom:-100px;left:-38px;}
+/*工艺 房 墙体*/
+.gongyi .inner .fang .bg ul .qiangti{width:238px;height:209px;bottom:-14px;right:270px;}
+.gongyi .inner .fang .bg ul .qiangti .square{margin-top:52px;}
+.gongyi .inner .fang .bg ul .qiangti .circle{position:relative;top:0;left:100px;}
+.gongyi .inner .fang .bg ul .qiangti .circle:before{content:"";width:1px;height:52px;border-left:1px dashed #f4c61b;position:absolute;bottom:-52px;left:26px;}
+/*工艺 房 地砖*/
+.gongyi .inner .fang .bg ul .dizhuan{width:238px;height:207px;bottom:-65px;right:-54px;}
+.gongyi .inner .fang .bg ul .dizhuan .square{margin-top:50px;}
+.gongyi .inner .fang .bg ul .dizhuan .circle{position:relative;top:0;left:60px;}
+.gongyi .inner .fang .bg ul .dizhuan .circle:before{content:"";width:1px;height:52px;border-left:1px dashed #f4c61b;position:absolute;bottom:-52px;left:26px;}
+/*工艺 房 防水*/
+.gongyi .inner .fang .bg ul .fangshui{width:238px;height:190px;top:175px;right:-140px;}
+.gongyi .inner .fang .bg ul .fangshui .square{margin-top:16px;}
+.gongyi .inner .fang .bg ul .fangshui .circle{position:relative;top:0;left:40px;}
+.gongyi .inner .fang .bg ul .fangshui .circle:before{content:"";width:66px;height:1px;border-top:1px dashed #f4c61b;position:absolute;top:26px;right:-66px;}
+.gongyi .inner .fang .bg ul .fangshui .circle:after{content:"";width:1px;height:54px;border-left:1px dashed #f4c61b;position:absolute;bottom:-32px;right:-66px;}
+
+/*团队*/
+.tuandui{width:100%;}
+.tuandui .inner{}
+.tuandui .inner .picText{width:100%;margin:55px 0 81px 0;}
+.tuandui .inner .picText li{width:25%;height:230px;float:left;}
+.tuandui .inner .picText .pic img{width:100%;}
+.tuandui .inner .picText .text{text-align:center;}
+.tuandui .inner .picText .text h4{height:40px;line-height:40px;padding:63px 0 16px 0;color:#f8be15;font-size:30px;font-weight:normal;}
+.tuandui .inner .picText .text p{height:29px;line-height:29px;font-size:18px;}
+/*承诺*/
+.chengnuo{width:100%;}
+.chengnuo .inner{}
+.chengnuo .inner .picText{margin:37px 0 142px 150px;text-align:center;}
+.chengnuo .inner .picText li{width:203px;height:276px;display:inline-block;float:left;margin-right:145px;border-top:2px solid #d4d4d4;border-bottom:1px solid #d4d4d4;text-align:center;}
+.chengnuo .inner .picText li img{padding-top:35px;}
+.chengnuo .inner .picText li h4{height:22px;line-height:22px;padding-top:23px;color:#f3be24;font-size:23px;}
+.chengnuo .inner .picText li .line{width:38px;height:1px;background:#a9a9a9;display:inline-block;margin:15px auto 17px;}
+.chengnuo .inner .picText li p{color:#5f5f5f;height:18px;line-height:18px;font-size:12px;}
+/*轻松装*/
+.qingsongzhuang{width:100%;background:#e8e8e8;}
+.qingsongzhuang .inner{}
+.qingsongzhuang .inner ul{padding:27px 0 81px 0;}
+.qingsongzhuang .inner ul li{float:left;height:106px;line-height:106px;text-align:center;}
+.qingsongzhuang .inner ul .text{width:106px;border:2px solid #000;border-radius:50%;font-size:20px;}
+.qingsongzhuang .inner ul .you{width:28px;margin:0 8px;background:url("../images/xinfang-qingsongzhuang-you_03.png") no-repeat 0 39px;}
+/*设计师*/
+.shejishi{width:100%;}
+.shejishi .wrap{width:895px;margin:0 auto;}
+.shejishi .wrap form{margin:66px 0 73px 0;font-size:18px;}
+.shejishi .wrap form label{width:247px;height:53px;line-height:53px;border:1px solid #0c0c0c;border-radius:5px;float:left;margin:0 22px 0 0;}
+.shejishi .wrap form label img{margin:11px 0 0 8px;float:left;}
+.shejishi .wrap form label span{width:1px;height:24px;background:#505050;display:block;margin:13px 0 0 8px;float:left;}
+.shejishi .wrap form label input{float:left;width:150px;padding:5px 10px;height:43px;line-height:43px;color:#515151;}
+.shejishi .wrap form button{width:332px;height:53px;line-height:53px;color:#fff;background:#f4c61b;text-align: center;float:left;}

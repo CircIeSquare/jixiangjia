@@ -1,0 +1,19 @@
+.footer{height:274px;width:100%;background:#e8e8e8;}
+.footer a{color:#5b5b5b;}
+.footer .inner{padding-top:45px;}
+.footer .siteMap{float:left;}
+.footer .siteMap dl{margin-right:112px;float:left;}
+.footer .siteMap dl:nth-child(1){margin-left:13px;}
+.footer .siteMap dl dt{height:33px;line-height:33px;font-size:22px;padding-bottom:25px;}
+.footer .siteMap dl dt a{color:#000;}
+.footer .siteMap dl dd{height:41px;line-height:41px;font-size:18px;font-weight:normal;}
+
+.footer .weixin{float:right;padding:3px 62px 0 0;text-align: right;}
+.footer .weixin .gzh{}
+.footer .weixin h5{font-size:18px;font-weight:normal;color:#0c0c0c;padding-top:5px;}
+.footer .weixin .tel{padding-top:5px;}
+.footer .weixin .tel img{float:left;}
+.footer .weixin .tel p{float:right;width:174px;height:30px;line-height:30px;font-size:26px;font-weight:bold;color:#4a4a4a;}
+
+
+.bottom{width:100%;min-width:1024px;height:77px;line-height:77px;background:#4c4c4c;color:#ababab;text-align:center;}

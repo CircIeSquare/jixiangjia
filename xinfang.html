@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新房装修</title>
+    <link rel="shortcut icon" href="font/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/header.css"/>
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/xinfang.css"/>
+    <link type="text/css" rel="stylesheet" href="css/footer.css"/>
+    <link type="text/css" rel="stylesheet" href="css/meta-ie8.css"/>
+    <script src="js/jquery-1.8.0.js"></script>
+    <!--<script src="js/jquery-3.0.0.min.js"></script>-->
+    <!--<script src="js/swiper.min.js"></script>-->
+    <script src="js/textScroll.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/xinfang.js"></script>
+
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="top">
+            <div class="inner clearfix">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="极享家，只为你住的安心" title="极享家，只为你住的安心"/>
+                </a>
+                <ul class="message">
+                    <li>
+                        <img src="images/ding.png"/>
+                        <span class="city">武汉</span>
+                        <span class="selec">[切换城市]</span>
+                    </li>
+                    <li>
+                        <img src="images/phone.png"/>
+                        <span class="phone">400-175-0058</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav" id="nav">
+            <div class="inner clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="xinfang.html">新房装修</a></li>
+                <li><a href="laofang.html">老房翻新</a></li>
+                <li><a href="zhuhuanli.html">住户案例</a></li>
+                <li><a href="baojia.html">装修报价</a></li>
+                <li><a href="zhishi.html">装修知识</a></li>
+            </div>
+        </ul>
+    </div>
+    <!--banner-->
+    <div class="swiper-container" id="banner">
+        <!-- Swiper -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide1"><a href="zhuhuanli.html"></a></div>
+            <div class="swiper-slide swiper-slide2"><a href="baojia.html"></a></div>
+            <div class="swiper-slide swiper-slide3"><a href="zhishi.html"></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!--<img src="images/banner2.jpg"/>-->
+    </div>
+    <!--banner IE9以下浏览器-->
+    <!--[if lt IE 9]>
+    <style>
+        #banner{display:none;}
+    </style>
+    <div class="bannerIE clearfix center" id="bannerIE">
+        <ul class="banner-ul clearfix" id="banner-ul">
+            <li class="li li1"><a href="zhuhuanli.html"></a></li>
+            <li class="li li2"><a href="baojia.html"></a></li>
+            <li class="li li3"><a href="zhishi.html"></a></li>
+        </ul>
+        <span class="preBtn" id="preBtn">〈</span>
+        <span class="nextBtn" id="nextBtn">〉</span>
+        <ol class="banner-ol" id="banner-ol"></ol>
+    </div>
+    <script src="js/tools.js"></script>
+    <script src="js/banner-ie.js"></script>
+    <![endif]-->
+
+    <!--报价-->
+    <div class="baojia" id="baojia">
+        <div class="inner clearfix">
+            <div class="txt">
+                <img src="images/xinfang-baodan-img_03.png" alt="">
+                <h3>专业量房报价</h3>
+                <p>算算我家装修多少钱？</p>
+            </div>
+            <form class="cont clearfix">
+                <ul class="select" id="select-xinjiu">
+                    <li class="active xin_wrap">
+                        <span id="baojia_xin"></span>
+                        <h6>新房</h6>
+                    </li>
+                    <li class="jiu_wrap">
+                        <span id="baojia_jiu"></span>
+                        <h6>旧房</h6>
+                    </li>
+                </ul>
+                <div class="right">
+                    <label class="clearfix">
+                        <img src="images/baojia-ico1.png"/>
+                        <span></span>
+                        <input type="text" placeholder="请输入您的房屋面积" maxlength="4" id="BJmianji"/>
+                    </label>
+                    <label class="clearfix">
+                        <img src="images/baojia-ico2.png"/>
+                        <span></span>
+                        <input type="text" placeholder="请输入您的称呼" maxlength="6" id="BJname"/>
+                    </label>
+                    <label class="clearfix">
+                        <img src="images/baojia-ico3.png"/>
+                        <span></span>
+                        <input type="text" placeholder="请输入您的手机号" maxlength="11" id="BJnumber"/>
+                    </label>
+                    <label class="clearfix">
+                        <input type="text" placeholder="请输入验证号码" id="BJrandnum"/>
+                        <button type="button" class="yanzheng">验证号码</button>
+                    </label>
+                    <button type="button" class="jisuan" id="liji-baojia">立即报价</button>
+                    <a href="#" class="zixun">详情咨询客服报价>></a>
+                </div>
+            </form>
+            <div class="people" id="people">
+                <div class="thead">累计已有<strong>5435</strong>位业主报价成功</div>
+                <!--<marquee direction="up" scrollamount="5" class="p-scroll">
+                    <table>
+                        <tbody>
+                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
+                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
+                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
+                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
+                        </tbody>
+                    </table>
+                </marquee>-->
+                <div class="people-cont" id="people-cont">
+                    <ul>
+                        <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
+                        <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
+                        <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
+                        <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--品质-->
+    <div class="pingzhi">
+        <div class="inner">
+            <div class="page-title">
+                <h3>轻松装享品质生活</h3>
+                <div class="line"></div>
+                <p>EXCLSIVE OFFICIAL WEBSITE</p>
+            </div>
+            <ul class="picText clearfix">
+                <li>
+                    <img src="images/xinfang-pingzhi-img_03.png">
+                    <h5>五大空间配置</h5>
+                </li>
+                <li>
+                    <img src="images/xinfang-pingzhi-img_05.png">
+                    <h5>42项不限量</h5>
+                </li>
+                <li>
+                    <img src="images/xinfang-pingzhi-img_07.png">
+                    <h5>一线国际品牌</h5>
+                </li>
+                <li>
+                    <img src="images/xinfang-pingzhi-img_09.png">
+                    <h5>八大施工工艺标准</h5>
+                </li>
+                <li>
+                    <img src="images/xinfang-pingzhi-img_11.png">
+                    <h5>自有金牌团队</h5>
+                </li>
+                <li>
+                    <img src="images/xinfang-pingzhi-img_13.png">
+                    <h5>六大费用全免</h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--标题文字-->
+    <div class="p-title">
+        <h2>空间随心而动 · 生活为爱而变</h2>
+        <p>SPACE MOVES WITH THE HEART · LIVE CHANGES FOR LOVE</p>
+    </div>
+    <!--空间-->
+    <div class="kongjian" id="kongjian">
+        <div class="page-title">
+            <h3>五大空间配置</h3>
+            <div class="line"></div>
+            <p>EXCLSIVE OFFICIAL WEBSITE</p>
+        </div>
+        <div class="picText">
+            <ul class="text">
+                <li class="active">客餐厅</li>
+                <li>卧室</li>
+                <li>厨房</li>
+                <li>卫生间</li>
+                <li>阳台</li>
+            </ul>
+            <ul class="pic">
+                <li><img src="images/xinfang-kongjian-img_12.png"/></li>
+                <li><img src="images/xinfang-kongjian-img_10.png"/></li>
+                <li><img src="images/xinfang-kongjian-img_08.png"/></li>
+                <li><img src="images/xinfang-kongjian-img_06.png"/></li>
+                <li><img src="images/xinfang-kongjian-img_03.png"/></li>
+            </ul>
+        </div>
+    </div>
+    <!--全包-->
+    <div class="quanbao">
+        <div class="wrap">
+            <div class="page-title">
+                <h3>全包0增项 42项不限量</h3>
+                <div class="line"></div>
+                <p>EXCLSIVE OFFICIAL WEBSITE</p>
+            </div>
+            <div class="picText">
+                <ul class="clearfix">
+                    <li class="pic">
+                        <img src="images/xinfang-quanbao-img_03.png"/>
+                    </li>
+                    <li class="text">
+                        <p>- 02 -</p>
+                        <h5>内门数量不限</h5>
+                        <h6>(不改变原始结构)</h6>
+                    </li>
+                    <li class="pic">
+                        <img src="images/xinfang-quanbao-img_05.png"/>
+                    </li>
+                    <li class="pic">
+                        <img src="images/xinfang-quanbao-img_07.png"/>
+                    </li>
+                    <li class="text">
+                        <p>- 05 -</p>
+                        <h5>木地板面积不限</h5>
+                        <h6>(不改变原始结构)</h6>
+                    </li>
+                    <li class="pic">
+                        <img src="images/xinfang-quanbao-img_09.png"/>
+                    </li>
+                    <li class="text">
+                        <p>- 01 -</p>
+                        <h5>墙漆面积不限</h5>
+                        <h6>(不改变原始结构)</h6>
+                    </li>
+                    <li class="pic">
+                        <img src="images/xinfang-quanbao-img_16.png"/>
+                    </li>
+                    <li class="text">
+                        <p>- 03 -</p>
+                        <h5>石膏米数不限</h5>
+                        <h6>(不改变原始结构)</h6>
+                    </li>
+                    <li class="text">
+                        <p>- 04 -</p>
+                        <h5>瓷砖面积不限</h5>
+                        <h6>(不改变原始结构)</h6>
+                    </li>
+                    <li class="pic">
+                        <img src="images/xinfang-quanbao-img_19.png"/>
+                    </li>
+                    <li class="text">
+                        <p>- 06 -</p>
+                        <h5>厨卫吊顶面积不限</h5>
+                        <h6>(不改变原始结构)</h6>
+                    </li>
+                </ul>
+                <a href="#" class="zixun">更多优惠咨询客服</a>
+            </div>
+        </div>
+    </div>
+    <!--全免-->
+    <div class="quanmian">
+        <div class="inner">
+            <div class="page-title">
+                <h3>轻松装享品质生活</h3>
+                <div class="line"></div>
+                <p>EXCLSIVE OFFICIAL WEBSITE</p>
+            </div>
+            <ul class="picText">
+                <li>
+                    <img src="images/xinfang-quanmian-img_1.png">
+                    <h5>免材上楼费</h5>
+                    <!--<div class="line"></div>-->
+                </li>
+                <li>
+                    <img src="images/xinfang-quanmian-img_2.png">
+                    <h5>免墙漆调色费</h5>
+                    <!--<div class="line"></div>-->
+                </li>
+                <li>
+                    <img src="images/xinfang-quanmian-img_3.png">
+                    <h5>免垃圾清运费</h5>
+                    <!--<div class="line"></div>-->
+                </li>
+                <li>
+                    <img src="images/xinfang-quanmian-img_09.png">
+                    <h5>免成品保护费</h5>
+                    <!--<div class="line"></div>-->
+                </li>
+                <li>
+                    <img src="images/xinfang-quanmian-img_11.png">
+                    <h5>免运输费</h5>
+                    <!--<div class="line"></div>-->
+                </li>
+                <li>
+                    <img src="images/xinfang-quanmian-img_13.png">
+                    <h5>免安装费</h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--工艺-->
+    <div class="gongyi" id="gongyi">
+        <div class="inner">
+            <div class="page-title">
+                <h3>十大标准施工工艺</h3>
+                <div class="line"></div>
+                <p>EXCLSIVE OFFICIAL WEBSITE</p>
+            </div>
+            <ul class="top clearfix">
+                <li class="pic">
+                    <img src="images/xinfang-gongyi-img_03.png"/>
+                </li>
+                <li class="text">
+                    <h4>轻松装工艺</h4>
+                    <div class="line"></div>
+                    <p>线管和水管开槽的深度/宽度，由于热胀冷缩，要在管径的基础下多预留10mm的距离，
+                    能保证封槽后线管不外露，墙面更加平整。
+                    </p>
+                </li>
+                <li class="text">
+                    <h4>分包工艺</h4>
+                    <div class="line"></div>
+                    <p>装修队伍临时拼凑，缺乏专业素养和经验积累，只是依葫芦画瓢进行开槽和封槽，造成墙面空鼓与开裂的隐患，随时可能毁掉你新家。</p>
+                </li>
+                <li class="pic">
+                    <img src="images/xinfang-gongyi-img_06.png"/>
+                </li>
+            </ul>
+            <div class="fang" id="fang">
+                <div class="bg">
+                    <ul class="clearfix">
+                        <li class="nishui">
+                            <div class="square">
+                                <h4>泥水施工</h4>
+                                <p>墙体顶部采用“蜈蚣脚”砌法结砂浆宜采用1：2的水泥砂浆勾缝密实、平直</p>
+                            </div>
+                            <div class="circle">泥水</div>
+                        </li>
+                        <li class="dianlu">
+                            <div class="square">
+                                <h4>电路施工</h4>
+                                <p>管卡距离≤400mm,封槽的水泥砂浆必须使用\1:3比例，所有步骤均以严谨的数字和比例来精确</p>
+                            </div>
+                            <div class="circle">电路</div>
+                        </li>
+                        <li class="qiangqi">
+                            <div class="square">
+                                <h4>墙漆施工</h4>
+                                <p>无流坠、无疙瘩、无刷纹、无沙眼，严格的要求是安心的保障</p>
+                            </div>
+                            <div class="circle">墙漆</div>
+                        </li>
+                        <li class="chengpin">
+                            <div class="square">
+                                <h4>成品安装</h4>
+                                <p>摆放整齐，保护到位，柜门安装需平整对缝高低差≤0.5mm,以毫米为单位，专注每个细节</p>
+                            </div>
+                            <div class="circle">成品</div>
+                        </li>
+                        <li class="shuilu">
+                            <div class="square">
+                                <h4>水路施工</h4>
+                                <p>横平竖直，冷热分离，一切严格依据标准施工</p>
+                            </div>
+                            <div class="circle">水路</div>
+                        </li>
+                        <li class="qiangti">
+                            <div class="circle">墙体</div>
+                            <div class="square">
+                                <h4>墙体施工</h4>
+                                <p>平整美观，阴阳角方正表面平整度误差≤4mm,无空鼓、裂纹</p>
+                            </div>
+                        </li>
+                        <li class="dizhuan">
+                            <div class="circle">地砖</div>
+                            <div class="square">
+                                <h4>地砖铺贴</h4>
+                                <p>边角整齐、接缝平整、光滑、均匀、纵横交接无明显错位，填嵌链接、密实</p>
+                            </div>
+                        </li>
+                        <li class="fangshui">
+                            <div class="circle">防水</div>
+                            <div class="square">
+                                <h4>防水施工</h4>
+                                <p>不渗水！防水分层进行，阴阳角等部位应先做防水附加层，多刷一道住的更安心</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--团队-->
+    <div class="tuandui">
+        <div class="inner">
+            <div class="page-title">
+                <h3>十大标准施工工艺</h3>
+                <div class="line"></div>
+                <p>EXCLSIVE OFFICIAL WEBSITE</p>
+            </div>
+            <ul class="picText clearfix">
+                <li class="pic">
+                    <img src="images/xinfang-tuandui-img1.png"/>
+                </li>
+                <li class="text">
+                    <h4>高效模块化施工</h4>
+                    <p>从毛坯到精装</p>
+                    <p>节约70%时间</p>
+                </li>
+                <li class="pic">
+                    <img src="images/xinfang-tuandui-img2.png"/>
+                </li>
+                <li class="text">
+                    <h4>信息化管理系统</h4>
+                    <p>通过手机实时掌控装修进度</p>
+                    <p>不必来回奔波，更省心</p>
+                </li>
+                <li class="text">
+                    <h4>VIP专业服务</h4>
+                    <p>高素质，好服务</p>
+                    <p>彻底告别传统家装分包模式</p>
+                </li>
+                <li class="pic">
+                    <img src="images/xinfang-tuandui-img3.png"/>
+                </li>
+                <li class="text">
+                    <h4>三重监管体系</h4>
+                    <p>工程总监+项目经理+工程管家</p>
+                    <p>每一道施工都严格进行检验</p>
+                </li>
+                <li class="pic">
+                    <img src="images/xinfang-tuandui-img4.png"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--标题文字-->
+    <div class="p-title">
+        <h2>所有努力,只为你住的安心</h2>
+        <p>SPACE MOVES WITH THE HEART · LIVE CHANGES FOR LOVE</p>
+    </div>
+    <!--承诺-->
+    <div class="chengnuo">
+        <div class="inner">
+            <div class="page-title">
+                <h3>品质保证 服务承诺</h3>
+                <div class="line"></div>
+                <p>EXCLSIVE OFFICIAL WEBSITE</p>
+            </div>
+            <ul class="picText clearfix">
+                <li>
+                    <img src="images/xinfang-chengnuo-img_03.png"/>
+                    <h4>5+2质保</h4>
+                    <div class="line"></div>
+                    <p>2年基础装修质保</p>
+                    <p>5年隐藏工程质保</p>
+                </li>
+                <li>
+                    <img src="images/xinfang-chengnuo-img_05.png"/>
+                    <h4>1对1服务</h4>
+                    <div class="line"></div>
+                    <p>从预约到交房</p>
+                    <p>全程1对1VIP服务</p>
+                </li>
+                <li>
+                    <img src="images/xinfang-chengnuo-img_07.png"/>
+                    <h4>终身售后维护</h4>
+                    <div class="line"></div>
+                    <p>不干一锤子买卖</p>
+                    <p>免去后顾之忧</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--轻松装-->
+    <div class="qingsongzhuang">
+        <div class="inner">
+            <div class="page-title">
+                <h3>如何拥有 轻松装</h3>
+                <div class="line"></div>
+                <p>EXCLSIVE OFFICIAL WEBSITE</p>
+            </div>
+            <ul class="clearfix">
+                <li class="text">官网预定</li>
+                <li class="you"></li>
+                <li class="text">量房设计</li>
+                <li class="you"></li>
+                <li class="text">精准报价</li>
+                <li class="you"></li>
+                <li class="text">签订合同</li>
+                <li class="you"></li>
+                <li class="text">进场施工</li>
+                <li class="you"></li>
+                <li class="text">成品安装</li>
+                <li class="you"></li>
+                <li class="text">竣工验收</li>
+                <li class="you"></li>
+                <li class="text">售后保障</li>
+            </ul>
+        </div>
+    </div>
+    <!--设计师-->
+    <div class="shejishi" id="shejishi">
+        <div class="wrap">
+            <div class="page-title">
+                <h3>我们是设计师， 也是生活家</h3>
+                <div class="line"></div>
+                <p>EXCLSIVE OFFICIAL WEBSITE</p>
+            </div>
+            <form class="clearfix">
+                <label class="clearfix">
+                    <img src="images/baojia-ico2.png"/>
+                    <span></span>
+                    <input type="text" placeholder="请输入您的称呼" maxlength="4" id="YuYueName"/>
+                </label>
+                <label class="clearfix">
+                    <img src="images/baojia-ico3.png"/>
+                    <span></span>
+                    <input type="text" placeholder="请输入您的手机号" maxlength="11" id="YuYueNumber"/>
+                </label>
+                <button type="button" id="yuyue">预约量房吧，免费哦</button>
+            </form>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="inner clearfix">
+            <div class="siteMap">
+                <dl>
+                    <dt><a href="#">关于我们</a></dt>
+                    <dd><a href="#">加入我们</a></dd>
+                    <dd><a href="#">品牌咨询</a></dd>
+                    <dd><a href="#">招商加盟</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">服务支持</a></dt>
+                    <dd><a href="#">免费量房</a></dd>
+                    <dd><a href="#">免费报价</a></dd>
+                    <dd><a href="#">快速出案</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">售后保障</a></dt>
+                    <dd><a href="#">5+2质保</a></dd>
+                    <dd><a href="#">终身售后服务</a></dd>
+                    <dd><a href="#">1对1服务</a></dd>
+                </dl>
+            </div>
+            <div class="weixin">
+                <img src="images/weixin.png" class="gzh"/>
+                <h5>极享家公众号</h5>
+                <div class="tel">
+                    <img src="images/footer-img.png"/>
+                    <p>400-175-0058</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bottom-->
+    <div class="bottom">copyright @ 湖北极享家装饰设计工程有限公司 版权所有</div>
+</body>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        /*autoplayDisableOnInteraction: false,*/
+        slidesPerView:1,
+        loop: false
+    });
+</script>
+<!--百度推送-->
+<script>
+    (function(){
+        var bp=document.createElement("script");
+        var curProtocol=window.location.protocol.split(":")	[0];
+        if(curProtocol==="https"){
+            bp.src='https://zz.bdstatic.com/linksubmit/push.js';
+        }else{
+            bp.src='http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s=document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp,s);
+    })();
+</script>
+<!--textScroll-->
+<script>
+    $(function() {
+        $('#people-cont').vTicker({
+            speed: 500,
+            pause: 800,
+            animation: 'fade',
+            mousePause: true,
+            showItems:4
+        });
+    });
+</script>
+</html>

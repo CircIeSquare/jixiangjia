@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>装修报价</title>
+    <link rel="shortcut icon" href="font/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/header.css"/>
+    <link type="text/css" rel="stylesheet" href="css/baojia.css"/>
+    <link type="text/css" rel="stylesheet" href="css/footer.css"/>
+    <script src="js/jquery-1.8.0.js"></script>
+    <script src="js/textScroll.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jisuan.js"></script>
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="top">
+            <div class="inner clearfix">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="极享家，只为你住的安心" title="极享家，只为你住的安心"/>
+                </a>
+                <ul class="message">
+                    <li>
+                        <img src="images/ding.png"/>
+                        <span class="city">武汉</span>
+                        <span class="selec">[切换城市]</span>
+                    </li>
+                    <li>
+                        <img src="images/phone.png"/>
+                        <span class="phone">400-175-0058</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav" id="nav">
+            <div class="inner clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="xinfang.html">新房装修</a></li>
+                <li><a href="laofang.html">老房翻新</a></li>
+                <li><a href="zhuhuanli.html">住户案例</a></li>
+                <li class="active"><a href="baojia.html">装修报价</a></li>
+                <li><a href="zhishi.html">装修知识</a></li>
+            </div>
+        </ul>
+    </div>
+    <!--banner-->
+    <div class="banner"></div>
+    <!--计算-->
+    <div class="jisuan" id="jisuan">
+        <div class="inner">
+            <h3 class="tit">装修计算器<span>已有78643位业主成功获取装修报价</span></h3>
+            <form class="cont clearfix">
+                <div class="left-form">
+                    <label class="clearfix">
+                        <span class="txt">所在地区：</span>
+                        <!--<input type="number"/>-->
+                        <div class="quyu"><span>武汉</span></div>
+                        <div class="select_box">
+                            <ul>
+                                <li>武汉</li>
+                                <li>长沙</li>
+                                <li>郑州</li>
+                                <li>西安</li>
+                                <li>合肥</li>
+                            </ul>
+                        </div>
+                    </label>
+                    <label class="clearfix">
+                        <span class="txt">房屋面积：</span>
+                        <input type="text" placeholder="填写您的房屋面积" id="mianji" maxlength="4"/>
+                    </label>
+                    <label class="clearfix">
+                        <span class="txt">您的名字：</span>
+                        <input type="text" placeholder="填写您的名字" id="name" maxlength="6"/>
+                    </label>
+                    <label class="clearfix">
+                        <span class="txt">您的手机：</span>
+                        <input type="text" placeholder="填写号码获取预算" id="phone" maxlength="11"/>
+                    </label>
+                </div>
+                <a type="button" class="center-btn" id="center-btn">开始计算</a>
+                <div class="right-form">
+                    <dl>
+                        <dt>施工预算约<span class="shigong">?</span>万元 全部预算约<span class="quanbu">?</span>万元</dt>
+                        <dd>
+                            <span class="txt">卧室</span>
+                            <span class="line"></span>
+                            <span class="jieguo ws">?</span>
+                            元
+                        </dd>
+                        <dd>
+                            <span class="txt">客厅</span>
+                            <span class="line"></span>
+                            <span class="jieguo kt">?</span>
+                            元
+                        </dd>
+                        <dd>
+                            <span class="txt">厨房</span>
+                            <span class="line"></span>
+                            <span class="jieguo cff">?</span>
+                            元
+                        </dd>
+                        <dd>
+                            <span class="txt">厕所</span>
+                            <span class="line"></span>
+                            <span class="jieguo cs">?</span>
+                            元
+                        </dd>
+                        <dd>
+                            <span class="txt">阳台</span>
+                            <span class="line"></span>
+                            <span class="jieguo yt">?</span>
+                            元
+                        </dd>
+                        <dd>
+                            <span class="txt">其他</span>
+                            <span class="line"></span>
+                            <span class="jieguo qt">?</span>
+                            元
+                        </dd>
+                    </dl>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--表格-->
+    <div class="biaoge">
+        <div class="inner">
+            <ul class="thead clearfix">
+                <li>综合对比</li>
+                <li>GEEKS</li>
+                <li>传统装修公司</li>
+                <li>其他施工队</li>
+            </ul>
+            <div class="wrap">
+                <ul class="cont clearfix">
+                    <li>量房设计报价</li>
+                    <li class="li-2">
+                        <img src="images/bj-biaoge-true.png"/>
+                        <p class="p1">24小时上门量房</p>
+                        <p>48小时方案预算</p>
+                        <p>72小时效果参考</p>
+                    </li>
+                    <li>
+                        <img src="images/bj-biaoge-true.png"/>
+                        <p>仅有方案</p>
+                    </li>
+                    <li class="li-last">
+                        <img src="images/bj-biaoge-false.png"/>
+                        <p>没有</p>
+                    </li>
+                </ul>
+                <ul class="cont clearfix">
+                    <li>设计把关</li>
+                    <li class="li-2">
+                        <img src="images/bj-biaoge-true.png"/>
+                        <p class="p1">10人专项设计小组</p>
+                        <p>500人专业设计师评估</p>
+                        <p>设计总监把关设计</p>
+                    </li>
+                    <li>
+                        <img src="images/bj-biaoge-false.png"/>
+                        <p>没有</p>
+                    </li>
+                    <li class="li-last">
+                        <img src="images/bj-biaoge-false.png"/>
+                        <p>没有</p>
+                    </li>
+                </ul>
+                <ul class="cont clearfix ul-3">
+                    <li>施工品质</li>
+                    <li class="li-2">
+                        <img src="images/bj-biaoge-true.png"/>
+                        <p class="p1">集团统一施工品牌</p>
+                        <p>5S品质施工</p>
+                    </li>
+                    <li>
+                        <img src="images/bj-biaoge-false.png"/>
+                        <p>没有</p>
+                    </li>
+                    <li class="li-last">
+                        <img src="images/bj-biaoge-false.png"/>
+                        <p>没有</p>
+                    </li>
+                </ul>
+                <ul class="cont clearfix ul-4">
+                    <li>预算审核</li>
+                    <li class="li-2">
+                        <img src="images/bj-biaoge-true.png"/>
+                        <p>专业监理审核预算</p>
+                    </li>
+                    <li>
+                        <img src="images/bj-biaoge-false.png"/>
+                        <p>没有</p>
+                    </li>
+                    <li class="li-last">
+                        <img src="images/bj-biaoge-false.png"/>
+                        <p>没有</p>
+                    </li>
+                </ul>
+                <ul class="cont clearfix ul-5">
+                    <li>疑问解答</li>
+                    <li class="li-2">
+                        <img src="images/bj-biaoge-true.png"/>
+                        <p>一对一家庭疑问和监理</p>
+                    </li>
+                    <li>
+                        <img src="images/bj-biaoge-true.png"/>
+                        <p>设计师</p>
+                    </li>
+                    <li class="li-last">
+                        <img src="images/bj-biaoge-false.png"/>
+                        <p>没有</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--标题文字-->
+    <div class="p-title">
+        <h2>一分钟发布，24小时上门量房</h2>
+    </div>
+    <!--专业-->
+    <div class="zhuanye">
+        <div class="inner">
+            <div class="picText">
+                <div class="txt">
+                    <p>专业设计师<br/>
+                    精准测量尺寸</p>
+                </div>
+            </div>
+            <div class="picText picText2">
+                <div class="txt">
+                    <p>现场沟通采光<br/>
+                    及空间布局方案</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--设计-->
+    <div class="sheji">
+        <div class="inner">
+            <div class="page-title">
+                <h3>三套设计方案全面PK，挑选最满意的设计</h3>
+                <div class="line"></div>
+            </div>
+            <ul class="cont clearfix">
+                <li>
+                    <img src="images/bj-sheji-img1.png">
+                    <div class="txt">
+                        <p>专业设计师创意PK，比谁的设计最合意</p>
+                        <div class="line"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/bj-sheji-img2.png">
+                    <div class="txt">
+                        <p>过往成功案例对比，选最合适的设计师</p>
+                        <div class="line"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/bj-sheji-img3.png">
+                    <div class="txt">
+                        <p>设计不满意可重复修改，到满意为止</p>
+                        <div class="line"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--对比-->
+    <div class="duibi">
+        <div class="inner">
+            <div class="page-title">
+                <h3>精确报价对比，获取最合理的装修报价</h3>
+                <div class="line"></div>
+            </div>
+            <ul class="cont clearfix">
+                <li>
+                    <div class="pic">
+                        <img src="images/bj-duibi-img1.png"/>
+                    </div>
+                    <p>3份报价对比，熟悉项目单价 和内容，拒绝缺项漏项</p>
+                </li>
+                <li>
+                    <div class="pic">
+                        <img src="images/bj-duibi-img2.png"/>
+                    </div>
+                    <p>报价公开透明，了解常用建材 行情，避免价格陷阱</p>
+                </li>
+                <li>
+                    <div class="pic">
+                        <img src="images/bj-duibi-img3.png"/>
+                    </div>
+                    <p>拒绝恶意增项，规定预算浮动 不得超过5%-8%</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--报价-->
+    <div class="baojia" id="baojia">
+        <div class="inner clearfix">
+            <div class="txt">
+                <img src="images/xinfang-baodan-img_03.png" alt="">
+                <h3>专业量房报价</h3>
+                <p>算算我家装修多少钱？</p>
+            </div>
+            <form class="cont clearfix">
+                <ul class="clearfix select" id="select-xinjiu">
+                    <li class="active xin_wrap">
+                        <span id="baojia_xin"></span>
+                        <h6>新房</h6>
+                    </li>
+                    <li class="jiu_wrap">
+                        <span id="baojia_jiu"></span>
+                        <h6>旧房</h6>
+                    </li>
+                </ul>
+                <div class="right">
+                    <label class="clearfix">
+                        <img src="images/baojia-ico1.png"/>
+                        <span></span>
+                        <input type="text" placeholder="请输入您的房屋面积" maxlength="4" id="BJmianji"/>
+                    </label>
+                    <label class="clearfix">
+                        <img src="images/baojia-ico2.png"/>
+                        <span></span>
+                        <input type="text" placeholder="请输入您的称呼" maxlength="6" id="BJname"/>
+                    </label>
+                    <label class="clearfix">
+                        <img src="images/baojia-ico3.png"/>
+                        <span></span>
+                        <input type="text" placeholder="请输入您的手机号" maxlength="11" id="BJnumber"/>
+                    </label>
+                    <label class="clearfix">
+                        <input type="text" placeholder="请输入验证号码" id="BJrandnum"/>
+                        <button type="button" class="yanzheng">验证号码</button>
+                    </label>
+                    <button type="button" class="jisuan" id="liji-baojia">立即报价</button>
+                    <a href="#" class="zixun">详情咨询客服报价>></a>
+                </div>
+            </form>
+            <div class="people" id="people">
+                <div class="thead">累计已有<strong>5435</strong>位业主报价成功</div>
+                <!--<marquee direction="up" scrollamount="5" class="p-scroll">
+                    <table>
+                        <tbody>
+                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
+                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
+                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
+                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
+                        </tbody>
+                    </table>
+                </marquee>-->
+                <div class="people-cont" id="people-cont">
+                    <ul>
+                        <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
+                        <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
+                        <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
+                        <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="inner clearfix">
+            <div class="siteMap">
+                <dl>
+                    <dt><a href="#">关于我们</a></dt>
+                    <dd><a href="#">加入我们</a></dd>
+                    <dd><a href="#">品牌咨询</a></dd>
+                    <dd><a href="#">招商加盟</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">服务支持</a></dt>
+                    <dd><a href="#">免费量房</a></dd>
+                    <dd><a href="#">免费报价</a></dd>
+                    <dd><a href="#">快速出案</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">售后保障</a></dt>
+                    <dd><a href="#">5+2质保</a></dd>
+                    <dd><a href="#">终身售后服务</a></dd>
+                    <dd><a href="#">1对1服务</a></dd>
+                </dl>
+            </div>
+            <div class="weixin">
+                <img src="images/weixin.png" class="gzh"/>
+                <h5>极享家公众号</h5>
+                <div class="tel">
+                    <img src="images/footer-img.png"/>
+                    <p>400-175-0058</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bottom-->
+    <div class="bottom">copyright @ 湖北极享家装饰设计工程有限公司 版权所有</div>
+</body>
+<!--百度推送-->
+<script>
+    (function(){
+        var bp=document.createElement("script");
+        var curProtocol=window.location.protocol.split(":")	[0];
+        if(curProtocol==="https"){
+            bp.src='https://zz.bdstatic.com/linksubmit/push.js';
+        }else{
+            bp.src='http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s=document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp,s);
+    })();
+</script>
+<!--textScroll-->
+<script>
+    $(function() {
+        $('#people-cont').vTicker({
+            speed: 500,
+            pause: 800,
+            animation: 'fade',
+            mousePause: true,
+            showItems:4
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,22 @@
+*{margin:0;padding:0;}
+a{text-decoration:none;color:#000;}
+ul,ol,li{list-style:none;}
+img{font-size:0;border:none;}
+input,button{border:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+body{font-family:"arial","Microsoft YaHei";width:100%;min-width:1024px;overflow-x:hidden;}
+
+
+
+/*clearfix*/
+.clearfix:before, .clearfix:after {content:"";display:table;}
+.clearfix:after{clear:both;overflow:hidden;}
+.clearfix{*zoom:1;}
+/*inner*/
+.inner{width:1200px;margin:0 auto;}
+/*page-title*/
+.page-title{text-align:center;}
+.page-title h3{padding-top:70px;height:42px;line-height:42px;font-weight:normal;font-size:30px;}
+.page-title .line{width:52px;height:3px;background:#f2c81c;display:inline-block;}
+.page-title p{height:16px;line-height:16px;color:#686a67;margin:7px 0 39px 0;font-size:12px;}
+
