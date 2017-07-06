@@ -54,7 +54,7 @@ $(function(){
         };
     });
     //手机号不能为空
-    $("#BJphone").on("blur",function(){
+    $("#BJnumber").on("blur",function(){
         var phone=$(this).val();
         if(/^1[3578]\d{9}$/.test(phone)){
             BJphone = true;
@@ -71,7 +71,7 @@ $(function(){
             //quyu=$("#quyu i").text();
             mianjis=$("#BJmianji").val();
             name=$("#BJname").val();
-            phone=$("#BJphone").val();
+            phone=$("#BJnumber").val();
 
             //表单跳走
             tsou();
