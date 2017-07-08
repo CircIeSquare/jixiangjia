@@ -70,23 +70,25 @@
         <!--<img src="images/banner2.jpg"/>-->
     </div>
     <!--banner IE9以下浏览器-->
-    <!--[if lt IE 9]>
-    <style>
-        #banner{display:none;}
-    </style>
-    <div class="bannerIE clearfix center" id="bannerIE">
-        <ul class="banner-ul clearfix" id="banner-ul">
-            <li class="li li1"><a href="zhuhuanli.html"></a></li>
-            <li class="li li2"><a href="baojia.html"></a></li>
-            <li class="li li3"><a href="zhishi.html"></a></li>
-        </ul>
-        <span class="preBtn" id="preBtn">〈</span>
-        <span class="nextBtn" id="nextBtn">〉</span>
-        <ol class="banner-ol" id="banner-ol"></ol>
+    <div class="IE8">
+        <!--[if lt IE 9]>
+        <style>
+            #banner{display:none;}
+        </style>
+        <div class="bannerIE clearfix center" id="bannerIE">
+            <ul class="banner-ul clearfix" id="banner-ul">
+                <li class="li li1"><a href="zhuhuanli.html"></a></li>
+                <li class="li li2"><a href="baojia.html"></a></li>
+                <li class="li li3"><a href="zhishi.html"></a></li>
+            </ul>
+            <span class="preBtn" id="preBtn">〈</span>
+            <span class="nextBtn" id="nextBtn">〉</span>
+            <ol class="banner-ol" id="banner-ol"></ol>
+        </div>
+        <script src="js/tools.js"></script>
+        <script src="js/banner-ie.js"></script>
+        <![endif]-->
     </div>
-    <script src="js/tools.js"></script>
-    <script src="js/banner-ie.js"></script>
-    <![endif]-->
     <!--好礼-->
     <div class="haoli">
         <div class="inner">
@@ -542,26 +544,28 @@
     </div>
 
     <!--IE8以下浏览器提示-->
-    <!--[if lt IE 8]>
-    <!--<style type="text/css">
-        #ie{display:block;}     /*对IE显示特定模块*/
-        .header,.banner,.haoli,.jiaju,.fangan,.zhuanxiang,.baojia,.pingpai,.gongyi,.anli,.liucheng,.footer,.bottom,.jisuanqi{display:none;}
-    </style>
-    <div id="ie">
-        <div id="ie-body">
-            <br /><br />
-            <center>
-                <p><br /><br /><br />欢迎光临极享家</p>
-                <p>您正在使用一个落后的浏览器浏览网页</p>
-                <p>本站无法在 IE 8 以下版本的 IE 系列浏览器中正常访问。</p>
-                <p>为了获得更好的浏览体验, 请升级到更高级的浏览器，或转换到另一些浏览器，本站将能为您提供更好的服务。</p>
-                <p>本站推荐使用以下浏览器：Firefox, Chrome, Opera, Safari </p>
-                <p>您也可以直接移步到极享家官网www.54jxj.com</p>
-                <p><br>Copyright &copy; 2017. 极享家 . All Rights Reserved.</p>
-            </center>
+    <div class="ie7">
+        <!--[if lt IE 8]>
+        <style type="text/css">
+            #ie{display:block;}     /*对IE显示特定模块*/
+            .header,.banner,.haoli,.jiaju,.fangan,.zhuanxiang,.baojia,.pingpai,.gongyi,.anli,.liucheng,.footer,.bottom,.jisuanqi{display:none;}
+        </style>
+        <div id="ie">
+            <div id="ie-body">
+                <br /><br />
+                <center>
+                    <p><br /><br /><br />欢迎光临极享家</p>
+                    <p>您正在使用一个落后的浏览器浏览网页</p>
+                    <p>本站无法在 IE 8 以下版本的 IE 系列浏览器中正常访问。</p>
+                    <p>为了获得更好的浏览体验, 请升级到更高级的浏览器，或转换到另一些浏览器，本站将能为您提供更好的服务。</p>
+                    <p>本站推荐使用以下浏览器：Firefox, Chrome, Opera, Safari </p>
+                    <p>您也可以直接移步到极享家官网www.54jxj.com</p>
+                    <p><br>Copyright &copy; 2017. 极享家 . All Rights Reserved.</p>
+                </center>
+            </div>
         </div>
-    </div>-->
     <![endif]-->
+    </div>
 </body>
 <!-- Initialize Swiper -->
 <script>
