@@ -10,7 +10,7 @@
 .jisuan .inner .cont .left-form label{margin-top:20px;height:62px;line-height:62px;width:428px;display:block;border:2px solid #c4c4c4;border-top:1px solid #878787;border-bottom:1px solid #878787;position:relative;}
 .jisuan .inner .cont .left-form label .txt{font-size:22px;padding-left:14px;float:left;}
 .jisuan .inner .cont .left-form label input{width:60%;height:100%;line-height:62px;border:none;padding:0 10px;color:#434343;float:left;}
-.jisuan .inner .cont .left-form label .select_box{display:none;position:absolute;width:290px;border:1px solid #dfdfdf;top:50px;right:13px;z-index:10;background:#fff;}
+.jisuan .inner .cont .left-form label .select_box{display:none;position:absolute;width:290px;height:180px;overflow-x:hidden;overflow-y:auto;border:1px solid #dfdfdf;top:50px;right:13px;z-index:10;background:#fff;}
 .jisuan .inner .cont .left-form label .select_box ul{width:100%;}
 .jisuan .inner .cont .left-form label .select_box li{height:30px;line-height:30px;padding:0 10px;}
 .jisuan .inner .cont .left-form label .select_box li:hover{background:#f6ce21;color:#fff;}

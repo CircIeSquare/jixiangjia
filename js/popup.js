@@ -15,6 +15,18 @@ $(function(){
         +'<li data-value='+"郑州"+'>郑州</li>'
         +'<li data-value='+"西安"+'>西安</li>'
         +'<li data-value='+"合肥"+'>合肥</li>'
+        +'<li data-value='+"北京"+'>北京</li>'
+        +'<li data-value='+"天津"+'>天津</li>'
+        +'<li data-value='+"石家庄"+'>石家庄</li>'
+        +'<li data-value='+"杭州"+'>杭州</li>'
+        +'<li data-value='+"苏州"+'>苏州</li>'
+        +'<li data-value='+"南京"+'>南京</li>'
+        +'<li data-value='+"上海"+'>上海</li>'
+        +'<li data-value='+"广州"+'>广州</li>'
+        +'<li data-value='+"深圳"+'>深圳</li>'
+        +'<li data-value='+"厦门"+'>厦门</li>'
+        +'<li data-value='+"成都"+'>成都</li>'
+        +'<li data-value='+"重庆"+'>重庆</li>'
         +'</ul></div>'
         +'</select>'+'</span>'+'<span>'
         +'<small>房屋面积：</small><input type='+"text"+' name='+"mianji"+' id='+"mianji4"+' maxlength='+"4"+' placeholder='+"填写您的房屋面积(例如:100)"+'>'
@@ -45,10 +57,8 @@ $(function(){
     //var CS=568;
     //广州每平米装修价格为558元
     //var GZ=558;
-
     //单价588每平米，不区分区域，全国统一价
     var dj=588;
-
 
     var timer=setTimeout(function(){
         $(".jisuanqi .JSQtitle .goTop").trigger("click");
@@ -84,9 +94,6 @@ $(function(){
                 $("#quyu ul").hide();
             });
 
-            var alertMianji="[面积输入错误]";
-            var alertNames="[姓名输入错误]";
-            var alertPhone="[手机号码非法]";
             //面积不能为空
             $('#mianji4').on("blur",function(){
                 var mianji=$(this).val();
@@ -141,27 +148,6 @@ $(function(){
 
                     var yusuan=$(".youjieguo .yusuan");
                     var QByusuan=$(".youjieguo .QByusuan");
-                    /*if(quyu=="全国"){
-                        yusuan.val((QG*parseFloat(mianjis)/10000).toFixed(2));
-                        if(yusuan.val()!=0){
-                            QByusuan.val((parseFloat(yusuan.val())+5).toFixed(2));
-                        };
-                    }else if(quyu=="武汉"){
-                        yusuan.val((WH*parseFloat(mianjis)/10000).toFixed(2));
-                        if(yusuan.val()!=0){
-                            QByusuan.val((parseFloat(yusuan.val())+5).toFixed(2));
-                        };
-                    }else if(quyu=="长沙"){
-                        yusuan.val((CS*parseFloat(mianjis)/10000).toFixed(2));
-                        if(yusuan.val()!=0){
-                            QByusuan.val((parseFloat(yusuan.val())+5).toFixed(2));
-                        };
-                    }else if(quyu=="广州"){
-                        yusuan.val((GZ*parseFloat(mianjis)/10000).toFixed(2));
-                        if(yusuan.val()!=0){
-                            QByusuan.val((parseFloat(yusuan.val())+5).toFixed(2));
-                        };
-                    };*/
                     yusuan.val((dj*parseFloat(mianjis)/10000).toFixed(2));
                     if(yusuan.val()!=0){
                         QByusuan.val((parseFloat(yusuan.val())+5).toFixed(2));
@@ -178,34 +164,8 @@ $(function(){
                     // $('#formt').submit();
                     // return true;
                     tsou();
-
                 }else if(fmianji==false || fname==false || fphone==false){
-                    alert('输入不合法！');
-                    //面积错误
-                //     return false;
-                // }else if(fmianji==true && fname==false && fphone==true){
-                //     alert(alertNames);
-                //     //姓名错误
-                //     return false;
-                // }else if(fmianji==true && fname==true && fphone==false){
-                //     alert(alertPhone);
-                //     //号码错误
-                //     return false;
-                // }else if(fmianji==false && fname==false && fphone==true){
-                //     alert(alertMianji+alertNames);
-                //     //面积错误、姓名错误
-                //     return false;
-                // }else if(fmianji==false && fname==true && fphone==false){
-                //     alert(alertMianji+alertPhone);
-                //     //面积错误、号码错误
-                //     return false;
-                // }else if(fmianji==true && fname==false && fphone==false){
-                //     alert(alertNames+alertPhone);
-                //     //姓名错误、号码错误
-                //     return false;
-                // }else if(fmianji==false && fname==false && fphone==false){
-                    // alert(alertMianji+alertNames+alertPhone);
-                    //面积错误、姓名错误、号码错误
+                    alert('输入不正确！');
                     return false;
                 }else{
                     //阻止默认行为
@@ -225,10 +185,15 @@ $(function(){
             url: '/home/suan',
             data:{name:name,mianji:mianjis,phone:phone,quyu:quyu},
             dataType:'json',
-            traditional: true,
+            traditional:true,
+            success:function(data){
+                alert("提交成功");
+            },
+            error:function(err){
+                alert("提交失败");
+            }
         });
     }
-
 
     //点击按钮隐藏表单
     $(".jisuanqi .JSQtitle .goBot").on("click",function(){
@@ -240,7 +205,6 @@ $(function(){
         var formt=$(".jisuanqi #form #formt")[0];
         if(formt!==undefined){
             $(".jisuanqi #form").slideUp(800,"swing",function(){
-                //$(".jisuanqi #form").html("");
                 $(".jisuanqi #formt").remove();
             });
         }else{

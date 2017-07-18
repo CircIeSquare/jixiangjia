@@ -51,7 +51,7 @@ body{position:relative;}
 #quyu i{display:block;/*width:70.3%;*/width:93.3%;height:38px;line-height:40px;cursor:pointer;text-indent:10px;font-style:normal;}
 #quyu i .i_active{color:#C36;}
 /*width:200px; position:absolute; top:36px; left:-1px; border:1px solid #3CF; display:none; background:#fff;*/
-#quyu ul{/*width:70.3%;*/width:93.3%;background:#fff;position:absolute;top:40px;left:10px;border:1px solid #bdbdbd;display:none;}
+#quyu ul{/*width:70.3%;*/width:93.3%;background:#fff;position:absolute;top:40px;left:10px;border:1px solid #bdbdbd;display:none;height:180px;overflow-x:hidden;overflow-y:auto;}
 #quyu ul li{cursor:pointer; line-height:36px;text-indent:10px;}
 #quyu ul li:hover{background:#f9c523;;color:#fff;}
 #quyu small{position:absolute;right:10px;font-size:26px;font-family:"微软雅黑";color:#3CF;/*transform:rotate(90deg);*/line-height:50px;}

@@ -72,6 +72,10 @@ $(function(){
          }*/
         //每次都将后一次的滚动高度赋值给前一次的滚动高度
         firstTop=lastTop;
+
+        /*console.log("$(document).height()："+$(document).height());
+        console.log("------------------------------------------");
+        console.log("$(document).scrollTop()："+$(document).scrollTop());*/
     });
 
 });

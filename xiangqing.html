@@ -10,10 +10,11 @@
     <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
     <link type="text/css" rel="stylesheet" href="css/xiangqing.css"/>
     <link type="text/css" rel="stylesheet" href="css/footer.css"/>
-    <script src="js/jquery-1.8.0.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <script src="js/jquery.min.1.8.3.js"></script>
     <script src="js/header-hover.js"></script>
+    <script src="js/header-popup.js"></script>
     <script src="js/swiper.jquery.min.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/xiangqing.js"></script>
 </head>
 <body>
@@ -29,10 +30,6 @@
                     <img src="images/ding.png"/>
                     <span class="city">全国</span>
                     <span class="selec">[切换城市]</span>
-                    <div class="has-area">
-                        <ul>
-                        </ul>
-                    </div>
                 </li>
                 <li>
                     <img src="images/phone.png"/>
@@ -49,6 +46,7 @@
             <li class="active"><a href="zhuhuanli.html">住户案例</a><span></span></li>
             <li><a href="baojia.html">装修报价</a><span></span></li>
             <li><a href="zhishi.html">装修知识</a><span></span></li>
+            <li><a href="about.html">关于我们</a><span></span></li>
         </ul>
     </div>
 </div>
@@ -292,6 +290,34 @@
 </div>
 <!--bottom-->
 <div class="bottom">copyright @ 湖北极享家装饰设计工程有限公司 版权所有</div>
+
+<!--区域弹窗-->
+<div class="has-area-bg" id="has-area-bg"></div>
+<div class="has-area" id="has-area">
+    <div class="top" style="background:url('images/header_area.png') no-repeat center;backgroud-size:cover;">
+        <span class="closeArea"><img src="images/popup-close.png"></span>
+    </div>
+    <div class="area clearfix">
+        <div class="region">
+            <ul>
+                <li>华北</li>
+                <li>华东</li>
+                <li>华南</li>
+                <li>华中</li>
+                <li>西南</li>
+            </ul>
+        </div>
+        <div class="has-city" id="has-city">
+            <ul class="c1 clearfix">
+            </ul>
+            <ul class="c2 clearfix"></ul>
+            <ul class="c3 clearfix"></ul>
+            <ul class="c4 clearfix"></ul>
+            <ul class="c5 clearfix"></ul>
+        </div>
+    </div>
+    <p>更多城市敬请期待！</p>
+</div>
 </body>
 <!-- Initialize Swiper -->
 <script>

@@ -10,11 +10,13 @@
     <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
     <link type="text/css" rel="stylesheet" href="css/laofang.css"/>
     <link type="text/css" rel="stylesheet" href="css/footer.css"/>
-    <script src="js/jquery-1.8.0.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <script src="js/jquery.min.1.8.3.js"></script>
     <script src="js/header-hover.js"></script>
+    <script src="js/header-popup.js"></script>
+    <script src="js/baojia-modul.js"></script>
     <script src="js/textScroll.js"></script>
     <script src="js/swiper.jquery.min.js"></script>
-    <script src="js/index.js"></script>
 </head>
 <body>
 <!--header-->
@@ -29,10 +31,6 @@
                     <img src="images/ding.png"/>
                     <span class="city">全国</span>
                     <span class="selec">[切换城市]</span>
-                    <div class="has-area">
-                        <ul>
-                        </ul>
-                    </div>
                 </li>
                 <li>
                     <img src="images/phone.png"/>
@@ -49,6 +47,7 @@
             <li><a href="zhuhuanli.html">住户案例</a><span></span></li>
             <li><a href="baojia.html">装修报价</a><span></span></li>
             <li><a href="zhishi.html">装修知识</a><span></span></li>
+            <li><a href="about.html">关于我们</a><span></span></li>
         </ul>
     </div>
 </div>
@@ -366,71 +365,6 @@
     </div>
 </div>
 <!--报价-->
-<!--<div class="baojia" id="baojia">
-    <div class="inner clearfix">
-        <div class="txt">
-            <img src="images/xinfang-baodan-img_03.png" alt="">
-            <h3>专业量房报价</h3>
-            <p>算算我家装修多少钱？</p>
-        </div>
-        <form class="cont clearfix">
-            <ul class="clearfix select" id="select-xinjiu">
-                <li class="active xin_wrap">
-                    <span id="baojia_xin"></span>
-                    <h6>新房</h6>
-                </li>
-                <li class="jiu_wrap">
-                    <span id="baojia_jiu"></span>
-                    <h6>旧房</h6>
-                </li>
-            </ul>
-            <div class="right">
-                <label class="clearfix">
-                    <img src="images/baojia-ico1.png"/>
-                    <span></span>
-                    <input type="text" placeholder="请输入您的房屋面积" maxlength="4" id="BJmianji"/>
-                </label>
-                <label class="clearfix">
-                    <img src="images/baojia-ico2.png"/>
-                    <span></span>
-                    <input type="text" placeholder="请输入您的称呼" maxlength="6" id="BJname"/>
-                </label>
-                <label class="clearfix">
-                    <img src="images/baojia-ico3.png"/>
-                    <span></span>
-                    <input type="text" placeholder="请输入您的手机号" maxlength="11" id="BJnumber"/>
-                </label>
-                &lt;!&ndash;<label class="clearfix">
-                    <input type="text" placeholder="请输入验证号码" id="BJrandnum"/>
-                    <button type="button" class="yanzheng">验证号码</button>
-                </label>&ndash;&gt;
-                <label class="clearfix BJ-quyu">
-                    <img src="images/baojia-ico4.png"/>
-                    <span></span>
-                    &lt;!&ndash;<input type="text" id="BJ-area" value="武昌区"  readonly="readonly" placeholder="武昌区"/>&ndash;&gt;
-                    <div id="BJ-area" class="input">全国</div>
-                    <ul class="select-quyu">
-                        <li data-value="全国">全国</li>
-                    </ul>
-                </label>
-                <button type="button" class="jisuan" id="liji-baojia">立即报价</button>
-                <a href="#" class="zixun">详情咨询客服报价>></a>
-            </div>
-        </form>
-        <div class="people" id="people">
-            <div class="thead">累计已有<strong>5435</strong>位业主报价成功</div>
-            <div class="people-cont" id="people-cont">
-                <ul>
-                    <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
-                    <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
-                    <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
-                    <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>-->
-<!--报价-->
 <div class="baojia" id="baojia">
     <div class="inner clearfix">
         <div class="txt">
@@ -530,6 +464,34 @@
 </div>
 <!--bottom-->
 <div class="bottom">copyright @ 湖北极享家装饰设计工程有限公司 版权所有</div>
+
+<!--区域弹窗-->
+<div class="has-area-bg" id="has-area-bg"></div>
+<div class="has-area" id="has-area">
+    <div class="top" style="background:url('images/header_area.png') no-repeat center;backgroud-size:cover;">
+        <span class="closeArea"><img src="images/popup-close.png"></span>
+    </div>
+    <div class="area clearfix">
+        <div class="region">
+            <ul>
+                <li>华北</li>
+                <li>华东</li>
+                <li>华南</li>
+                <li>华中</li>
+                <li>西南</li>
+            </ul>
+        </div>
+        <div class="has-city" id="has-city">
+            <ul class="c1 clearfix">
+            </ul>
+            <ul class="c2 clearfix"></ul>
+            <ul class="c3 clearfix"></ul>
+            <ul class="c4 clearfix"></ul>
+            <ul class="c5 clearfix"></ul>
+        </div>
+    </div>
+    <p>更多城市敬请期待！</p>
+</div>
 </body>
 <!-- Initialize Swiper -->
 <script>

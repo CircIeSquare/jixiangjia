@@ -56,7 +56,7 @@ $(function(){
         var ele_height=$(ele).height();//内容区元素的高
         //判断条件
         /*if(winScrollTop<ele_top-winHeight){
-         $(ele).removeClass(clsName);
+            $(ele).removeClass(clsName);
          }else */if((winScrollTop>ele_top-winHeight)&&(winScrollTop<ele_top+ele_height)){
             if($(ele).attr('class')=="fang"){
                 shigong();
@@ -81,54 +81,58 @@ $(function(){
     });
 
 
-    //所有的都为true时才可以提交
-    var YuYueName=false,YuYuePhone=false
+    //预约提交
+    var YuYueName=false;
+    var YuYueNumber=false;
     //姓名不能为空
     $('#YuYueName').on("blur",function(){
-        if($(this).val()){
+        var name=$(this).val();
+        if(name!==""){
             YuYueName = true;
         }else{
             return false;
         };
     });
     //手机号不能为空
-    $("#YuYuePhone").on("blur",function(){
+    $("#YuYueNumber").on("blur",function(){
         var phone=$(this).val();
         if(/^1[3578]\d{9}$/.test(phone)){
-            YuYuePhone = true;
+            YuYueNumber = true;
         }else{
             return false;
         };
     });
     //给表单绑定提交事件
     $('#yuyue').click(function() {
-
-        if (YuYueName&&YuYuePhone) {
+        if (YuYueName&&YuYueNumber) {
             //当名称、手机号都不为空时候，
             //先判断选择的区域，进行分类计算，最后输出到右边的区域
             name=$("#YuYueName").val();
-            phone=$("#YuYuePhone").val();
-
+            phone=$("#YuYueNumber").val();
             //表单跳走
             tsou();
-        }else if(YuYueName==false || YuYuePhone==false){
-            alert('输入不合法！');
+        }else if(YuYueName==false|| YuYueNumber==false){
+            alert('输入不正确！');
             return false;
         }else{
             //阻止默认行为
             return false;
         };
     });
-
     // ajax发送计算器数据
     function tsou(){
         $.ajax({
-            headers: {'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')},
             type:'POST',
             url: '/home/suan',
             data:{name:name,phone:phone},
             dataType:'json',
             traditional: true,
+            success:function(data){
+                alert("提交成功");
+            },
+            error:function(err){
+                alert("提交失败");
+            }
         });
     };
 

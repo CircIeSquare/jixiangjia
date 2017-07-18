@@ -37,9 +37,6 @@ $(function(){
     var fname=false,fphone=false,fmianji=false;
     //单价588每平米，不区分区域，全国统一价
     var dj=588;
-    var alertMianji="[面积输入错误]";
-    var alertNames="[姓名输入错误]";
-    var alertPhone="[手机号码非法]";
     //面积不能为空
     $('#mianji').on("blur",function(){
         var mianji=$(this).val();
@@ -95,7 +92,7 @@ $(function(){
             //表单跳走
             tsou();
         }else if(fmianji==false || fname==false || fphone==false){
-            alert('输入不合法！');
+            alert('输入不正确！');
             return false;
         }else{
             //阻止默认行为
@@ -112,6 +109,12 @@ $(function(){
             data:{name:name,mianji:mianjis,phone:phone,quyu:quyu},
             dataType:'json',
             traditional: true,
+            success:function(data){
+                alert("提交成功");
+            },
+            error:function(err){
+                alert("提交失败");
+            }
         });
     };
 

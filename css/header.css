@@ -4,7 +4,7 @@ ul,ol,li{list-style:none;}
 img{font-size:0;}
 input,button{border:none;}
 
-body{font-family:"arial","Microsoft YaHei";width:100%;min-width:1024px;overflow-x:hidden;}
+body{font-family:"arial","Microsoft YaHei";width:100%;min-width:1024px;overflow-x:hidden;margin:0 auto;position:relative;}
 
 /*@font-face {*/
     /*font-family:"汉仪力量黑简";*/
@@ -39,17 +39,29 @@ body{font-family:"arial","Microsoft YaHei";width:100%;min-width:1024px;overflow-
 .header .top .message li .city{font-weight:bold;font-size:16px;}
 .header .top .message li .selec{color:#3a3a38;cursor:pointer;}
 .header .top .message li .phone{font-weight:bold;font-size:18px;}
-.header .top .message li .has-area{background:#fff;position:absolute;left:0;top:70px;width:325px;padding:27px 20px 17px 0px;border:1px solid #f0f0f0;transition:all 0.3s linear;z-index:30;display:none;}
-.header .top .message li .has-area ul{margin-left:17px;}
-.header .top .message li .has-area ul li{height:30px;line-height:30px;padding:0 15px;margin:0 0 9px 0;font-size:14px;color:#434343;}
-.header .top .message li .has-area ul li:hover{background:#f4c422;color:#fff;}
-.header .top .message li:hover .has-area{display:block;}
+
+/*选择区域弹窗*/
+#has-area-bg{width:100%;height:100%;background:rgba(255,255,255,0.5);position:fixed;left:0;top:0;z-index:50;display:none;}
+#has-area{width:712px;position:fixed;left:50%;top:35%;margin-left:-356px;z-index:50;background:#fff;opacity:0;display:none;font-size:14px;color:#6c6c6c;}
+#has-area .top{width:100%;height:98px;background:#f4c51d;}
+#has-area .top span{float:right;margin:12px 12px 0 0;cursor:pointer;}
+#has-area .area{border:1px solid #dcdcdc;width:667px;margin:21px auto 0;}
+#has-area .area .region{width:73px;float:left;color:#333;text-align:center;}
+#has-area .area .region ul{width:73px;float:left;}
+#has-area .area .region ul li{height:34px;line-height:34px;color:#333;border-right:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;}
+#has-area .area .region ul li:last-child{border-bottom:none;}
+#has-area .area .has-city{width:594px;float:left;}
+#has-area .area .has-city ul{border-bottom:1px solid #dcdcdc;}
+#has-area .area .has-city ul:last-child{border-bottom:none;}
+#has-area .area .has-city ul li{height:34px;line-height:34px;padding:0 15px;color:#333;float:left;cursor:pointer;}
+#has-area p{height:34px;line-height:34px;text-align:center;}
 
 /*nav*/
 .header #nav{width:100%;min-width:1024px;height:45px;margin-left:60px;font-size:16px;}
 .header #nav li{float:left;height:45px;width:70px;margin-right:64px;text-align:center;position:relative;}
 .header #nav li a{display:block;width:70px;height:42px;line-height:42px;margin-right:64px;color:#050505;}
 /*.header #nav li:hover,*/.header #nav .active{border-bottom:3px solid #645f63;}
+.header #nav li a strong{font-weight:normal;}
 .header #nav li span{display:block;position:absolute; width:0px; height:0px;background:#645f63;top:45px; left:50%;}
 
 @keyframes lineRun {

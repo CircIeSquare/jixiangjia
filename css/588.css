@@ -1,0 +1,37 @@
+
+body{min-width:1200px;}
+.inner{width:1200px;margin:0 auto;overflow:hidden;}
+
+/*banner*/
+.banner{width:100%;height:540px;overflow:hidden;margin-top:118px;text-align:center;background-size:cover;}
+
+/*section0*/
+.section0{width:100%;}
+.section0 .inner ul{width:100%;padding:71px 0;}
+.section0 .inner ul li{width:400px;float:left;}
+.section0 .inner ul li img{width:100%;font-size:0;}
+
+/*section*/
+.section1,.section3,.section5{background:#f8f8f8;}
+.section a.zx-kefu{width:478px;height:47px;line-height:47px;background:#f4c51d;text-align:center;font-size:18px;color:#736950;display:block;margin:46px auto 61px;}
+/*section1*/
+.section{width:100%;}
+.section .content{margin-top:73px;}
+.section .content .sidebar{float:left;margin-left:16px;}
+.section .content .sidebar li{width:175px;height:175px;padding:15px;margin-bottom:20px;background:#fff;}
+.section .content .cont-wrap{float:right;width:910px;background:#fff;}
+.section .content .cont-wrap .cont{width:910px;position:relative;}
+.section .content .cont-wrap .cont img{padding:42px 0 42px 35px;}
+.section .content .cont-wrap .cont:before{content:"";width:0;height:0;border:20px solid transparent;border-right:20px solid #fff;position:absolute;left:-40px;top:90px;}
+/*section2,section4*/
+.section2 .content .sidebar,.section4 .content .sidebar{float:right;}
+.section2 .content .sidebar li,.section4 .content .sidebar li{background:#f4c51d;padding:15px 15px 15px 20px;}
+.section2 .content .cont-wrap,.section4 .content .cont-wrap{float:left;background:#f4c51d;}
+.section2 .content .cont-wrap .cont:before,.section4 .content .cont-wrap .cont:before{border:20px solid transparent;border-left:20px solid #f4c51d;left:inherit;right:-40px;}
+/*section6*/
+.section6{padding-top:40px;position:relative;}
+.section6 .inner img{position:absolute;top:20px;left:50%;margin-left:-252px;}
+.section6 .inner form{width:1196px;border:2px solid #f4c51d;margin:-32px 0 79px 0;padding:75px 0 35px 0;}
+.section6 .inner form label{float:left;padding-left:55px;height:38px;line-height:38px;font-size:22px;color:#f5c519;}
+.section6 .inner form label input{width:250px;height:38px;line-height:38px;padding:0 15px;color:#7f7f7f;margin-left:15px;background:#f4c51d;}
+.section6 .inner form button{width:250px;height:38px;line-height:38px;margin-left:66px;background:#575757;color:#fff;}

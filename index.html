@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>极享家，只为你住的安心,http://www.54jxj.com</title>
+    <title>极享家，只为你住的安心，http://www.54jxj.com</title>
     <link rel="shortcut icon" href="font/favicon.ico" />
-    <meta name="Keywords" content="极享家,极享家官网,新房装修，老房翻新，室内设计，家居装潢，湖北装修公司，湖北家装公司">
-    <meta name="description" content="极享家是一家专做老房改造与翻新，精装房升级，局部改造为主和新房装修的服务型公司，优选报价拒绝超预算，专注于房屋改造、房屋装修，优质服务、诚信装，始终保障业主装修每一步，从心出发打造专属家居，武汉地区统一咨询热线13871401470。"/>
+    <meta name="Keywords" content="极享家,极享家官网,湖北极享家，极享家装饰，新房装修，老房翻新，室内设计，家居装潢，湖北装修公司，湖北家装公司">
+    <meta name="description" content="极享家装饰是一家以小户型为主导的互联网家庭整装品牌，以小户型定位出发，集家装设计、简易家居、收纳为一体，从设计美学，收纳系统、简易家居等方面，为客户打造舒适、便捷的家居环境，咨询热线13871401470。"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <link type="text/css" rel="stylesheet" href="css/header.css"/>
@@ -15,13 +15,26 @@
     <link type="text/css" rel="stylesheet" href="css/jisuanqiNew.css"/>
     <link type="text/css" rel="stylesheet" href="css/animate.css"/>
     <link type="text/css" rel="stylesheet" href="css/animation.css"/>
-    <script src="js/jquery-1.8.0.js"></script>
+    <!--jquery-->
+    <script src="js/jquery.min.1.8.3.js"></script>
+    <!--轮播图-->
     <!--<script src="js/swiper.min.js"></script>-->
     <script src="js/swiper.jquery.min.js"></script>
+    <!--头部导航下划线动画-->
     <script src="js/header-hover.js"></script>
+    <!--头部选择区域弹窗-->
+    <script src="js/header-popup.js"></script>
+    <!--领取弹窗-->
+    <script src="js/modal.js"></script>
+    <!--报价模块表单验证-->
+    <script src="js/baojia-modul.js"></script>
+    <!--报价模块右文字滚动-->
     <script src="js/textScroll.js"></script>
-    <script src="js/index.js"></script>
+    <!--最新版集合index.js-->
+    <!--<script src="js/index.js"></script>-->
+    <!--底部弹窗-->
     <script src="js/popup.js"></script>
+    <!--页面滚动动画-->
     <script src="js/scroll_animation.js"></script>
 </head>
 <body>
@@ -29,18 +42,16 @@
     <div class="header">
         <div class="top">
             <div class="inner clearfix">
-                <a class="logo" href="index.html">
-                    <img src="images/logo.png" alt="极享家，只为你住的安心" title="极享家，只为你住的安心"/>
-                </a>
+                <h1>
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.png" alt="极享家，只为你住的安心" title="极享家，只为你住的安心"/>
+                    </a>
+                </h1>
                 <ul class="message">
                     <li>
-                        <img src="images/ding.png"/>
+                        <img src="images/ding.png" alt="极享家装饰全国位置分布"/>
                         <span class="city">全国</span>
                         <span class="selec">[切换城市]</span>
-                        <div class="has-area">
-                            <ul>
-                            </ul>
-                        </div>
                     </li>
                     <li>
                         <img src="images/phone.png"/>
@@ -51,22 +62,51 @@
         </div>
         <div class="nav" id="nav">
             <ul class="inner clearfix">
-                <li class="active"><a href="index.html">首页</a><span></span></li>
-                <li><a href="xinfang.html">新房装修</a><span></span></li>
-                <li><a href="laofang.html">老房翻新</a><span></span></li>
-                <li><a href="zhuhuanli.html">住户案例</a><span></span></li>
-                <li><a href="baojia.html">装修报价</a><span></span></li>
-                <li><a href="zhishi.html">装修知识</a><span></span></li>
+                <li class="active"><a href="index.html" target="_blank"><strong>首页</strong></a><span></span></li>
+                <li><a href="xinfang.html" target="_blank"><strong>新房装修</strong></a><span></span></li>
+                <li><a href="laofang.html" target="_blank"><strong>老房翻新</strong></a><span></span></li>
+                <li><a href="zhuhuanli.html" target="_blank"><strong>住户案例</strong></a><span></span></li>
+                <li><a href="baojia.html" target="_blank"><strong>装修报价</strong></a><span></span></li>
+                <li><a href="zhishi.html" target="_blank"><strong>装修知识</strong></a><span></span></li>
+                <li><a href="about.html" target="_blank"><strong>关于我们</strong></a><span></span></li>
             </ul>
         </div>
     </div>
+    <!--区域弹窗-->
+    <div class="has-area-bg" id="has-area-bg"></div>
+    <div class="has-area" id="has-area">
+        <div class="top" style="background:url('images/header_area.png') no-repeat center;backgroud-size:cover;">
+            <span class="closeArea"><img src="images/popup-close.png"></span>
+        </div>
+        <div class="area clearfix">
+            <div class="region">
+                <ul>
+                    <li>华北</li>
+                    <li>华东</li>
+                    <li>华南</li>
+                    <li>华中</li>
+                    <li>西南</li>
+                </ul>
+            </div>
+            <div class="has-city" id="has-city">
+                <ul class="c1 clearfix">
+                </ul>
+                <ul class="c2 clearfix"></ul>
+                <ul class="c3 clearfix"></ul>
+                <ul class="c4 clearfix"></ul>
+                <ul class="c5 clearfix"></ul>
+            </div>
+        </div>
+        <p>更多城市敬请期待！</p>
+    </div>
+
     <!--banner-->
     <div class="swiper-container banner" id="banner">
         <!-- Swiper -->
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide1"><a href="zhuhuanli.html"></a></div>
-            <div class="swiper-slide swiper-slide2"><a href="baojia.html"></a></div>
-            <div class="swiper-slide swiper-slide3"><a href="zhishi.html"></a></div>
+            <div class="swiper-slide swiper-slide1"><a href="588.html" target="_blank"></a></div>
+            <div class="swiper-slide swiper-slide2"><a href="1288.html" target="_blank"></a></div>
+            <div class="swiper-slide swiper-slide3"><a href="zhishi.html" target="_blank"></a></div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -94,35 +134,35 @@
         <![endif]-->
     </div>
     <!--好礼-->
-    <div class="haoli animated fadeInUp  pt-page-delay500" id="haoli">
+    <div class="haoli animated fadeInUp pt-page-delay500" id="haoli">
         <div class="inner">
             <div class="page-title">
-                <h3>官网专享好礼HIGH送</h3>
+                <h2>官网专享好礼HIGH送</h2>
                 <div class="line"></div>
                 <p>EXCLSIVE OFFICIAL WEBSITE</p>
             </div>
             <ul class="picText clearfix">
                 <li class="animated fadeInUp pt-page-delay700">
                     <div class="img">
-                        <img src="images/haoli-img_03.png"/>
+                        <img src="images/haoli-img_03.png" alt="极享家装饰，1000元装修抵用券"/>
                     </div>
-                    <h5>1000元装修抵用券</h5>
+                    <h3>1000元装修抵用券</h3>
                     <div class="line"></div>
                     <span class="liji">立即领取</span>
                 </li>
                 <li class="animated fadeInUp pt-page-delay900">
                     <div class="img">
-                        <img src="images/haoli-img_05.png"/>
+                        <img src="images/haoli-img_05.png" alt="极享家装饰，装修管家特权"/>
                     </div>
-                    <h5>装修管家特权</h5>
+                    <h3>装修管家特权</h3>
                     <div class="line"></div>
                     <span class="liji">立即领取</span>
                 </li>
                 <li class="animated fadeInUp pt-page-delay1000">
                     <div class="img">
-                        <img src="images/haoli-img_07.png"/>
+                        <img src="images/haoli-img_07.png" alt="极享家装饰，有家，有礼，才够完美"/>
                     </div>
-                    <h5>有家，有礼  才够完美</h5>
+                    <h3>有家，有礼  才够完美</h3>
                     <div class="line"></div>
                     <span class="liji">立即领取</span>
                 </li>
@@ -140,7 +180,7 @@
                 <a href="#">立即咨询</a>
             </div>
             <div class="pic">
-                <img src="images/jiaju-img_03.png"/>
+                <img src="images/jiaju-img_03.png" alt="极享家装饰，从心出发·打造专享家居"/>
             </div>
         </div>
     </div>
@@ -148,32 +188,32 @@
     <div class="fangan">
         <div class="inner">
             <div class="page-title">
-                <h3>极享家整体家居解决方案</h3>
+                <h2>极享家整体家居解决方案</h2>
                 <div class="line"></div>
                 <p>HOME IMPROVMENT SOLUTIONS</p>
             </div>
             <ul class="picText clearfix">
                 <li>
-                    <img src="images/fangan-img1.png"/>
-                    <h5>品牌轻松装</h5>
+                    <img src="images/fangan-img1.png" alt="极享家装饰，品牌轻松装"/>
+                    <h3>品牌轻松装</h3>
                     <div class="line"></div>
                     <p>￥58800</p>
                 </li>
                 <li>
-                    <img src="images/fangan-img2.png"/>
-                    <h5>局部改装包</h5>
+                    <img src="images/fangan-img2.png" alt="极享家装饰，局部改装包"/>
+                    <h3>局部改装包</h3>
                     <div class="line"></div>
                     <p>小面积改造解决方案</p>
                 </li>
                 <li>
-                    <img src="images/fangan-img3.png"/>
-                    <h5>全屋软装计划</h5>
+                    <img src="images/fangan-img3.png" alt="极享家装饰，全屋软装计划"/>
+                    <h3>全屋软装计划</h3>
                     <div class="line"></div>
                     <p>家具配饰一站式装修</p>
                 </li>
                 <li>
-                    <img src="images/fangan-img4.png"/>
-                    <h5>全屋家电包</h5>
+                    <img src="images/fangan-img4.png" alt="极享家装饰，全屋家电包"/>
+                    <h3>全屋家电包</h3>
                     <div class="line"></div>
                     <p>品牌家电</p>
                 </li>
@@ -183,7 +223,7 @@
     <!--专享-->
     <div class="zhuanxiang">
         <div class="wraper">
-            <img src="images/logo.png" alt=""/>
+            <img src="images/logo.png" alt="极享家装饰，从心出发 打造专享家居品牌"/>
             <h2>从心出发 打造专享家居品牌</h2>
         </div>
         <a href="#">立即咨询</a>
@@ -254,18 +294,18 @@
     <div class="pingpai" id="pingpai">
         <div class="wraper clearfix">
             <div class="page-title">
-                <h3>全国甄选一线材料品牌</h3>
+                <h2>全国甄选一线材料品牌</h2>
                 <div class="line"></div>
                 <p>FAMOUS BRAND</p>
             </div>
             <ul class="ping">
                 <li>
-                    <img src="images/pingpai-ico_01.png"/>
+                    <img src="images/pingpai-ico_01.png" alt="极享家，合作主材，甄选一线材料品牌"/>
                     <h4>合作主材</h4>
                     <p>The main cooperation</p>
                 </li>
                 <li>
-                    <img src="images/pingpai-ico_02.png"/>
+                    <img src="images/pingpai-ico_02.png" alt="极享家，环保辅材，甄选一线材料品牌"/>
                     <h4>环保辅材</h4>
                     <p>Environmental protection material</p>
                 </li>
@@ -300,7 +340,7 @@
     <div class="gongyi">
         <div class="wraper clearfix">
             <div class="page-title">
-                <h3>标准化施工工艺</h3>
+                <h2>标准化施工工艺</h2>
                 <div class="line"></div>
                 <p>CONSTRUCTION TECHNOLOGY</p>
             </div>
@@ -391,7 +431,7 @@
     <div class="anli">
         <div class="inner">
             <div class="page-title">
-                <h3>装修案例</h3>
+                <h2>装修案例</h2>
                 <div class="line"></div>
                 <p>DECORATION CASE</p>
             </div>
@@ -399,7 +439,7 @@
                 <li>
                     <a href="xiangqing.html">
                         <div class="img">
-                            <img src="images/anli-img_03.png"/>
+                            <img src="images/anli-img_03.png" alt="极享家装饰，住户案例赏析"/>
                             <div class="light-box"></div>
                         </div>
                         <h4><a href="xiangqing.html">北辰国际</a></h4>
@@ -411,7 +451,7 @@
                 <li>
                     <a href="xiangqing.html">
                         <div class="img">
-                            <img src="images/anli-img_05.png"/>
+                            <img src="images/anli-img_05.png" alt="极享家装饰，住户案例赏析"/>
                             <div class="light-box"></div>
                         </div>
                         <h4><a href="xiangqing.html">东湖复地一号</a></h4>
@@ -423,7 +463,7 @@
                 <li>
                     <a href="xiangqing.html">
                         <div class="img">
-                            <img src="images/anli-img_08.png"/>
+                            <img src="images/anli-img_08.png" alt="极享家装饰，住户案例赏析"/>
                             <div class="light-box"></div>
                         </div>
                         <h4><a href="xiangqing.html">百瑞景</a></h4>
@@ -439,14 +479,14 @@
     <div class="liucheng">
         <div class="inner">
             <div class="page-title">
-                <h3>高品质服务流程</h3>
+                <h2>高品质服务流程</h2>
                 <div class="line"></div>
                 <p>QUALITY SERVICE FLOW</p>
             </div>
             <ul class="cont clearfix">
                <li class="li">
                    <div class="top">
-                       <img src="images/liucheng-img1.png"/>
+                       <img src="images/liucheng-img1.png" alt="极享家装饰，预约量房"/>
                        <p>01</p>
                    </div>
                    <div class="bg">
@@ -456,7 +496,7 @@
                <li class="heng"></li>
                <li class="li">
                    <div class="top">
-                       <img src="images/liucheng-img2.png"/>
+                       <img src="images/liucheng-img2.png" alt="极享家装饰，免费上门量房"/>
                        <p>02</p>
                    </div>
                    <div class="bg">
@@ -466,7 +506,7 @@
                <li class="heng"></li>
                <li class="li">
                    <div class="top">
-                       <img src="images/liucheng-img3.png"/>
+                       <img src="images/liucheng-img3.png" alt="极享家装饰，24小时出方案"/>
                        <p>03</p>
                    </div>
                    <div class="bg">
@@ -476,7 +516,7 @@
                <li class="heng"></li>
                 <li class="li">
                     <div class="top">
-                        <img src="images/liucheng-img4.png"/>
+                        <img src="images/liucheng-img4.png" alt="极享家装饰，1对1VIP服务"/>
                         <p>04</p>
                     </div>
                     <div class="bg">
@@ -486,7 +526,7 @@
                 <li class="heng"></li>
                 <li class="li">
                     <div class="top">
-                        <img src="images/liucheng-img5.png"/>
+                        <img src="images/liucheng-img5.png" alt="极享家装饰，签订合同保障"/>
                         <p>05</p>
                     </div>
                     <div class="bg">
@@ -501,7 +541,7 @@
         <div class="inner clearfix">
             <div class="siteMap">
                 <dl>
-                    <dt><a href="#">关于我们</a></dt>
+                    <dt><a href="aboutUS.html">关于我们</a></dt>
                     <dd><a href="#">加入我们</a></dd>
                     <dd><a href="#">品牌咨询</a></dd>
                     <dd><a href="#">招商加盟</a></dd>
@@ -520,31 +560,29 @@
                 </dl>
             </div>
             <div class="weixin">
-                <img src="images/weixin.png" class="gzh"/>
+                <img src="images/weixin.png" class="gzh" alt="极享家装饰微信公众号"/>
                 <h5>极享家公众号</h5>
                 <div class="tel">
-                    <img src="images/footer-img.png"/>
+                    <img src="images/footer-img.png" alt="极享家装饰联系电话"/>
                     <p>400-175-0058</p>
                 </div>
             </div>
         </div>
     </div>
     <!--bottom-->
-    <div class="bottom">copyright @ 湖北极享家装饰设计工程有限公司 版权所有</div>
+    <div class="bottom">copyright © 湖北极享家装饰设计工程有限公司 版权所有 鄂ICP备17012710号</div>
     <!-- 底部弹框 -->
     <div class="jisuanqi" id="jisuanqi">
         <div class="inner .clearfix">
             <div class="JSQtitle">
                 <div class="left">
-                    <img src="images/img/title1.png" alt=""/>
+                    <img src="images/img/title1.png" alt="担心装修材料买多了，提前算一算。"/>
                 </div>
                 <div class="goTop"></div>
                 <div class="goBot"></div>
             </div>
 
-            <form action="/home/suan" method="post" id="form" class="clearfix">
-                <!--{{csrf_field()}}-->
-            </form>
+            <form action="/home/suan" method="post" id="form" class="clearfix"></form>
         </div>
     </div>
 
@@ -558,6 +596,18 @@
         <button type="button" id="ling">立即领取</button>
         <span class="close-btn" id="close">Ｘ</span>
     </form>
+
+    <!--左右两侧浮动窗-->
+    <div class="ad ad1" id="ad1">
+        <span id="k1">Ｘ</span>
+        <!--<img src="images/lf-shinei-IMG1_09.png" alt="极享家装饰"/>-->
+        <a class="img" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=834725762&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:834725762:53" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+    </div>
+    <!--<div class="ad ad2" id="ad2">
+        <span id="k2">Ｘ</span>
+        <img src="images/lf-shinei-IMG1_07.png" alt="极享家装饰"/>
+    </div>-->
+
     <!--IE9 以下 模态框-->
     <!--[if lt IE 9]>
         <style>
@@ -597,10 +647,26 @@
         paginationClickable: true,
         spaceBetween: 30,
         centeredSlides: true,
-        autoplay: 2500,
+        autoplay: 2000,
         autoplayDisableOnInteraction: false,
         slidesPerView: 1,
-        loop: false
+        loop: true
+    });
+
+    $(function(){
+        var swiper_container=$(".swiper-container");
+        var swiper_button_next=$(".swiper-button-next");
+        var swiper_button_pre=$(".swiper-button-prev");
+        swiper_button_next.addClass("swiper-btn-next");
+        swiper_button_pre.addClass("swiper-btn-pre");
+        swiper_container.on("mouseover",function(){
+            swiper_button_next.show();
+            swiper_button_pre.show();
+        });
+        swiper_container.on("mouseout",function(){
+            swiper_button_next.hide();
+            swiper_button_pre.hide();
+        });
     });
 </script>
 <!--百度推送-->
@@ -630,5 +696,64 @@
         });
     });
 </script>
+<script>
+    //构造函数
+    var fx=function(uid,kill){
+        var f=this;
+        var $=function(x){
+            return document.getElementById(x);
+        };
+        f.top=f.offset=200;
 
+        f.ad=$(uid);
+        $(kill).onclick=function(){
+            f.die();
+        };
+        f.timer=setInterval(
+                function(){
+                    f.dll();
+                },13);
+    };
+    //构造函数的原型
+    fx.prototype={
+        dll:function(){
+            var f=this;
+            var d=document;
+            var to=Math.max(d.body.scrollTop,d.documentElement.scrollTop);
+            //top值不等于scrollTop时
+            if(f.top!=to){
+                var d=(to-f.top)*0.1;
+                var mx=Math[d>0?'ceil':'floor'];
+                f.top+=parseInt(mx(d));
+                f.ad.style.top=f.top+f.offset+'px';
+            };
+        },
+        die:function (){
+            this.ad.style.display='none';
+            clearInterval(this.timer);
+        }
+    };
+    window.onload = function (){
+        var A1=new fx("ad1","k1");
+        var A2=new fx("ad2","k2");
+
+        var AD1=document.getElementById("ad1");
+        var AD2=document.getElementById("ad2");
+        AD1.style.display="none";
+        AD2.style.display="none";
+
+        window.onscroll=function(){
+            var haoli_top=document.getElementById("haoli");
+            var t=document.documentElement.scrollTop||document.body.scrollTop;
+            if(t>haoli_top.offsetTop){
+                AD1.style.display="block";
+                AD2.style.display="block";
+            }else{
+                AD1.style.display="none";
+                AD2.style.display="none";
+            };
+        };
+
+    };
+</script>
 </html>

@@ -1,0 +1,80 @@
+body{font-family:"arial","Microsoft YaHei";min-width:1200px;}
+.inner{width:1200px;margin:0 auto;}
+
+.title{text-align:center;}
+.title h3{height:24px;line-height:24px;color:#575757;font-size:16px;}
+.title .line{width:77px;height:2px;background:#f4c61b;display:inline-block;margin:5px 0 0 -50px;}
+.title h2{height:56px;line-height:56px;color:#010101;font-size:38px;margin-left:10px;}
+.title h2 a{float:right;color:#f4c61b;font-size:12px;margin-right:18px;}
+.title p{line-height:24px;padding-top:24px;color:#575757;font-size:12px;}
+
+/*banner*/
+.banner{width:100%;height:540px;overflow:hidden;margin-top:118px;text-align:center;background:url("../images/images/banner-about.png") no-repeat center;background-size:cover;}
+/*企业文化*/
+.culture{margin-top:61px;}
+.culture .inner .list-wrap{text-align:center;}
+.culture .inner ul.list{width:1200px;margin-top:61px;display:inline-block;}
+.culture .inner ul.list li{display:inline-block;width:300px;text-align:center;float:left;}
+.culture .inner ul.list li h3{font-size:18px;height:23px;line-height:23px;padding-top:18px;}
+.culture .inner ul.list li p{height:23px;line-height:23px;font-size:12px;}
+/*团队*/
+.team{margin-top:96px;}
+.team .inner{}
+.team .inner .pic{float:left;padding-top:85px;width:330px;}
+.team .inner .content{float:left;margin-left:-212px;}
+.team .inner .content .bg{width:290px;height:311px;border:2px solid #f4c51d;}
+.team .inner .content .title{text-align:left;/*position:absolute;top:79px;left:256px;*/margin:-260px 0 0 256px;position:relative;background:#fff;z-index:10;}
+.team .inner .content .title .line,.team .inner .content .title h2{margin-left:0;}
+.team .inner .content .title h3,.team .inner .content .title p{padding-top:5px;}
+
+/*经典案例*/
+.case{margin-top:76px;}
+.case .inner{}
+.case .inner .left{float:left;width:576px;}
+.case .inner .left .item{float:left;width:100%;}
+.case .inner .left img{font-size:0;display:block;float:right;}
+.case .inner .left p{height:34px;line-height:34px;font-size:14px;border-bottom:2px solid #f4c51d;float:left;}
+.case .inner .left .item1{padding-top:220px;}
+.case .inner .left .item2{position:relative;}
+.case .inner .left .item2 p{float:right;position:absolute;bottom:0;left:160px;margin:0 16px 0 0;}
+.case .inner .right{float:right;width:590px;}
+.case .inner .right .title{position:relative;}
+.case .inner .right .title .bg{width:438px;height:251px;border:2px solid #f4c61b;position:absolute;top:0;left:30px;}
+.case .inner .right .title .cont{width:450px;text-align:left;margin-top:49px;position:absolute;z-index:10;background:#fff;}
+.case .inner .title .cont h3{padding-top:5px;}
+.case .inner .right .title .cont .line,.case .inner .title .cont h2{margin-left:0;}
+/*.case .inner .title .cont h2 a{float:right;color:#f4c61b;font-size:12px;margin-right:18px;}*/
+.case .inner .right .title .cont p{padding-top:0;}
+.case .inner .right .item{float:left;}
+.case .inner .right .item img{float:left;}
+.case .inner .right .item p{height:34px;line-height:34px;font-size:14px;border-bottom:2px solid #f4c51d;float:left;}
+.case .inner .right .item1{padding:330px 0 35px 0;}
+.case .inner .right .item1 p{margin-left:15px;}
+/*新闻咨询*/
+.news{margin-top:137px;}
+.news .inner .title{}
+.news .inner .title h3{margin-left:-23px;}
+.news .inner .title .line{width:53px;}
+.news .inner .title h2{margin-left:80px;}
+.news .inner .content{margin-top:56px;}
+.news .inner .content li{margin-bottom:45px;width:100%;overflow:hidden;}
+.news .inner .content li .pic{width:288px;height:148px;background:#f4c51d;float:left;}
+.news .inner .content li h3,.news .inner .content li p{height:23px;line-height:23px;font-size:14px;font-weight:bold;color:#575757;margin-left:10px;width:840px;float:left;overflow:hidden;text-overflow:ellipsis;}
+.news .inner .content li h3{height:32px;line-height:32px;font-size:23px;font-weight:normal;}
+.news .inner .content li p{line-height:24px;height:120px;font-weight:normal;color:#8b8b8b;}
+/*联系方式*/
+.contact{width:100%;height:530px;overflow:hidden;background:url("../images/images/about-contact2.png") no-repeat center;background-size:cover;margin-top:35px;position:relative;}
+.contact .content{width:912px;padding-top:119px;margin:0 auto;}
+.contact .content .info{float:left;width:341px;position:relative;}
+.contact .content .info .bg{float:right;width:298px;height:258px;border:2px solid #f4c51d;}
+.contact .content .info .title{text-align:left;width:305px;z-index:10;margin: 65px 0 0 30px;}
+.contact .content .info .title h3,.contact .content .info .title .line,.contact .content .info .title h2{margin-left:0;}
+.contact .content .info .title h3,.contact .content .info .title p{padding-top:5px;}
+.contact .content .info .title p{font-size:16px;}
+.contact .content .about-form{float:right;width:408px;}
+.contact .content .about-form h5{height:25px;line-height:25px;font-size:14px;color:#565656;}
+.contact .content .about-form input,.contact .content .about-form textarea{width:386px;padding:0 10px;height:34px;line-height:34px;border:1px solid #b5b5b5;margin-bottom:18px;position:relative;}
+.contact .content .about-form textarea{cursor:s-resize;resize:vertical;}
+.contact .content .about-form h5{position: relative;}
+.contact .content .about-form h5:after{content:"*";width:5px;height:5px;position:absolute;right:-12px;top:33px;font-size:12px;color:#fe0201;}
+.contact .content .about-form button{width:160px;height:45px;background:#f4c51d;color:#fff;font-size:14px;margin-top:20px;}

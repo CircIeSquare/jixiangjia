@@ -9,10 +9,12 @@
     <link type="text/css" rel="stylesheet" href="css/header.css"/>
     <link type="text/css" rel="stylesheet" href="css/baojia.css"/>
     <link type="text/css" rel="stylesheet" href="css/footer.css"/>
-    <script src="js/jquery-1.8.0.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <script src="js/jquery.min.1.8.3.js"></script>
     <script src="js/header-hover.js"></script>
+    <script src="js/header-popup.js"></script>
+    <script src="js/baojia-modul.js"></script>
     <script src="js/textScroll.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/jisuan.js"></script>
 </head>
 <body>
@@ -28,10 +30,6 @@
                         <img src="images/ding.png"/>
                         <span class="city">全国</span>
                         <span class="selec">[切换城市]</span>
-                        <div class="has-area">
-                            <ul>
-                            </ul>
-                        </div>
                     </li>
                     <li>
                         <img src="images/phone.png"/>
@@ -48,6 +46,7 @@
                 <li><a href="zhuhuanli.html">住户案例</a><span></span></li>
                 <li class="active"><a href="baojia.html">装修报价</a><span></span></li>
                 <li><a href="zhishi.html">装修知识</a><span></span></li>
+                <li><a href="about.html">关于我们</a><span></span></li>
             </ul>
         </div>
     </div>
@@ -64,24 +63,23 @@
                         <div class="quyu"><span>武汉</span></div>
                         <div class="select_box">
                             <ul>
-                                <li>武汉</li>
-                                <li>长沙</li>
-                                <li>郑州</li>
-                                <li>合肥</li>
-                                <li>北京</li>
-                                <li>天津</li>
-                                <li>石家庄</li>
-                                <li>上海</li>
-                                <li>南京</li>
-                                <li>杭州</li>
-                                <li>苏州</li>
-                                <li>广州</li>
-                                <li>深圳</li>
-                                <li>佛山</li>
-                                <li>福州</li>
-                                <li>四川</li>
-                                <li>重庆</li>
-                                <li>南昌</li>
+                                <li data-value="武汉">武汉</li>
+                               <li data-value="长沙">长沙</li>
+                                <li data-value="郑州">郑州</li>
+                               <li data-value="西安">西安</li>
+                                <li data-value="合肥">合肥</li>
+                                <li data-value="北京">北京</li>
+                                <li data-value="天津">天津</li>
+                                <li data-value="石家庄">石家庄</li>
+                                <li data-value="杭州">杭州</li>
+                                <li data-value="苏州">苏州</li>
+                                <li data-value="南京">南京</li>
+                                <li data-value="上海">上海</li>
+                                <li data-value="广州">广州</li>
+                                <li data-value="深圳">深圳</li>
+                                <li data-value="厦门">厦门</li>
+                                <li data-value="成都">成都</li>
+                                <li data-value="重庆">重庆</li>
                             </ul>
                         </div>
                     </label>
@@ -417,6 +415,34 @@
     </div>
     <!--bottom-->
     <div class="bottom">copyright @ 湖北极享家装饰设计工程有限公司 版权所有</div>
+
+    <!--区域弹窗-->
+    <div class="has-area-bg" id="has-area-bg"></div>
+    <div class="has-area" id="has-area">
+        <div class="top" style="background:url('images/header_area.png') no-repeat center;backgroud-size:cover;">
+            <span class="closeArea"><img src="images/popup-close.png"></span>
+        </div>
+        <div class="area clearfix">
+            <div class="region">
+                <ul>
+                    <li>华北</li>
+                    <li>华东</li>
+                    <li>华南</li>
+                    <li>华中</li>
+                    <li>西南</li>
+                </ul>
+            </div>
+            <div class="has-city" id="has-city">
+                <ul class="c1 clearfix">
+                </ul>
+                <ul class="c2 clearfix"></ul>
+                <ul class="c3 clearfix"></ul>
+                <ul class="c4 clearfix"></ul>
+                <ul class="c5 clearfix"></ul>
+            </div>
+        </div>
+        <p>更多城市敬请期待！</p>
+    </div>
 </body>
 <!--百度推送-->
 <script>
