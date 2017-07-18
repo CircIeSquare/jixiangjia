@@ -7,7 +7,7 @@ ul{margin:0;padding:0;list-style:none;}
 body{position:relative;}
 
 /*计算器*/
-.jisuanqi{/*min-width:1360px;*/width:100%;margin:0 auto;position:fixed;bottom:0;background:rgba(157,174,180,0.5);z-index:999;}
+.jisuanqi{/*min-width:1360px;*/width:100%;margin:0 auto;position:fixed;bottom:0;background:rgba(27,28,29,0.5);z-index:20;}
 .jisuanqi .inner{/*width:1456px;*/width:76.04%;margin:0 auto;}
 /*计算器标题*/
 .jisuanqi .inner .JSQtitle{height:86px;/*border-bottom:10px solid #367ff8;*/border-bottom:10px solid #f2c81a;/*background:rgba(157,174,180,0.5);*/}

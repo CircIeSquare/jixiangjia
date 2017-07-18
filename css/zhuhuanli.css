@@ -18,25 +18,30 @@
 .anli .inner .anli-title li:hover,.anli .inner .anli-title .active{border-top:2px solid #5f5f5f;}
 .anli .inner .content-wrap{margin-top:40px;position:relative;}
 .anli .inner .cont{}
-.anli .inner #cont2{display:none;}
-.anli .inner .cont li{}
-.anli .inner .cont li{width:380px;float:left;margin:0 30px 40px 0;margin-right:20px\9;text-align:center;font-weight:normal;background:#fff;position:relative;overflow:hidden;}
-.anli .inner .cont li:after{content:"→";width:390px;height:40px;background:#f4c61b;text-align:center;line-height:40px;color:#fff;position:absolute;bottom:-40px;left:0;/*margin-bottom:-40px;*/opacity:0;z-index:10;transition:all 0.4s linear;}
-.anli .inner .cont li:nth-child(3),.anli .inner .cont li:nth-child(6){margin-right:0;}
-.anli .inner .cont li .img{width:100%;height:318px;overflow:hidden;position:relative;cursor:pointer;}
-.anli .inner .cont li .img img{width:373px;margin:5px 0 0 4px;transition:all 0.3s linear;}
-.anli .inner .cont li .img .light-box{width:378px;height:320px;position:absolute;left:0;top:0;border:1px solid #fff;transition:all 0.4s linear;}
-.anli .inner .cont li h4{height:34px;line-height:34px;padding-top:28px;font-size:18px;color:#000;transition:all 0.4s linear;position:relative;}
-.anli .inner .cont li .line{width:76px;height:2px;background:#f2c61f;display:inline-block;transition:all 0.4s linear;position:relative;}
-.anli .inner .cont li h6{font-size:12px;height:16px;line-height:16px;padding-top:9px;transition:all 0.4s linear;position:relative;}
-.anli .inner .cont li p{font-size:14px;height:22px;line-height:22px;padding:15px 0 46px 0;transition:all 0.4s linear;position:relative;}
-.anli .inner .cont li:hover{cursor:pointer;}
-.anli .inner .cont li:hover:after{transform:translateY(-40px);/*margin-bottom:0px;*/opacity:1;}
-.anli .inner .cont li:hover .img img{transform:scale(1.05,1.05);}
-.anli .inner .cont li:hover .img .light-box{transform:scale(0.8,0.8);}
-.anli .inner .cont li:hover h4 a{color:#f4c61b;}
-.anli .inner .cont li:hover h4,.anli .inner .cont li:hover .line,.anli .cont li:hover h6,.anli .cont li:hover p{transform:translateY(-20px);}
-.anli .inner .geng{width:221px;height:46px;display:inline-block;line-height:46px;border:1px solid #000;text-align:center;font-size:16px;border-radius:7px;}
+/*.anli .inner #cont2{display:none;}*/
+.anli .inner .cont-wrap li{}
+.anli .inner .cont-wrap li{width:380px;float:left;margin:0 30px 40px 0;margin-right:20px\9;text-align:center;font-weight:normal;background:#fff;position:relative;overflow:hidden;}
+.anli .inner .cont-wrap li:after{content:"→";width:390px;height:40px;background:#f4c61b;text-align:center;line-height:40px;color:#fff;position:absolute;bottom:-40px;left:0;/*margin-bottom:-40px;*/opacity:0;z-index:10;transition:all 0.4s linear;}
+.anli .inner .cont-wrap li:nth-child(3n){margin-right:0;}
+
+.anli .inner .cont-wrap li .img{width:100%;height:318px;overflow:hidden;position:relative;cursor:pointer;}
+.anli .inner .cont-wrap li .img img{width:373px;margin:5px 0 0 4px;transition:all 0.3s linear;}
+.anli .inner .cont-wrap li .img .light-box{width:378px;height:320px;position:absolute;left:0;top:0;border:1px solid #fff;transition:all 0.4s linear;}
+.anli .inner .cont-wrap li h4{height:34px;line-height:34px;padding-top:28px;font-size:18px;color:#000;transition:all 0.4s linear;position:relative;}
+.anli .inner .cont-wrap li .line{width:76px;height:2px;background:#f2c61f;display:inline-block;transition:all 0.4s linear;position:relative;}
+.anli .inner .cont-wrap li h6{font-size:12px;height:16px;line-height:16px;padding-top:9px;transition:all 0.4s linear;position:relative;}
+.anli .inner .cont-wrap li p{font-size:14px;height:22px;line-height:22px;padding:15px 0 46px 0;transition:all 0.4s linear;position:relative;}
+.anli .inner .cont-wrap li:hover{cursor:pointer;}
+.anli .inner .cont-wrap li:hover:after{transform:translateY(-40px);/*margin-bottom:0px;*/opacity:1;}
+.anli .inner .cont-wrap li:hover .img img{transform:scale(1.05,1.05);}
+.anli .inner .cont-wrap li:hover .img .light-box{transform:scale(0.8,0.8);}
+.anli .inner .cont-wrap li:hover h4 a{color:#f4c61b;}
+.anli .inner .cont-wrap li:hover h4,.anli .inner .cont-wrap li:hover .line,.anli .cont-wrap li:hover h6,.anli .cont-wrap li:hover p{transform:translateY(-20px);}
+.anli .inner .geng{width:221px;height:46px;display:inline-block;line-height:46px;border:1px solid #000;text-align:center;font-size:16px;border-radius:7px;cursor:pointer;}
+.anli .inner .cont-wrap .hide-ul{display:none;}
+#an-cont2{display:none;}
+
+
 /*承诺*/
 .chengnuo{width:100%;}
 .chengnuo .inner{}

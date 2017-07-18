@@ -20,58 +20,69 @@ $(function(){
     });
 
     //施工工艺 显示隐藏
-    var fang_circle=$("#gongyi #fang ul .circle");
-    var fang_square=$("#gongyi #fang ul .square");
-    var n=0;
-    fang_circle.each(function(index){
-        $(this).on("mouseover",function(){
-            clearInterval(timer);
-            /*$(this).find(":before").animate({opacity:"1"}).fadeIn();
-            $(this).find(":after").animate({opacity:"1"}).fadeIn();*/
-            $(this).siblings(".square").animate({opacity:"1"}).show();
+    function shigong(){
+        var fang_circle=$("#gongyi #fang ul .circle");
+        var fang_square=$("#gongyi #fang ul .square");
+        var n=0;
+        fang_circle.each(function(index){
+            $(this).on("mouseover",function(){
+                clearInterval(timer);
+                $(this).siblings(".square").animate({opacity:"1"}).show();
+            });
+            $(this).on("mouseout",function(){
+                if(n<8){
+                    var timer=setInterval(run,1000);
+                }
+                $(this).siblings(".square").animate({opacity:"0"}).hide();
+            });
         });
-        $(this).on("mouseout",function(){
-            if(n<8){
-                var timer=setInterval(run,1000);
+        var timer=setInterval(run,1000);
+        function run(){
+            n++;
+            if(n>=8){
+                clearInterval(timer);
             }
-            /*$(this).find(":before").animate({opacity:"0"}).fadeOut();
-            $(this).find(":after").animate({opacity:"0"}).fadeOut();*/
-            $(this).siblings(".square").animate({opacity:"0"}).hide();
-        });
-    });
-    var timer=setInterval(run,1000);
-    function run(){
-        n++;
-        if(n>=8){
-            clearInterval(timer);
-        }
-        fang_square.eq(n).animate({opacity:"1"},"fast","linear",function(){
-            $(this).animate({opacity:"0"});
-        });
+            fang_square.eq(n).animate({opacity:"1"},"fast","linear",function(){
+                $(this).animate({opacity:"0"});
+            });
+        };
     };
 
-    /*$(document).on("scroll",function(){
-        //alert($(document).height());
-        //var $fang=$("#fang");
-        var $fang=document.getElementById("#fang");
-        alert($fang);
-        var obj=getElementPosition($fang);
-        //alert("x:"+obj.x+";y:"+obj.y);
+    //向下滚动时
+    function toBottom(ele){
+        var winHeight=$(window).height()*0.5;//可视窗口的高度的一半，更改0.5可以调整滚动到底部、中部、顶部时候开始加载
+        var winScrollTop=$(window).scrollTop();//文档的滚动高度
+        var ele_top=$(ele).offset().top;//内容区元素的top
+        var ele_height=$(ele).height();//内容区元素的高
+        //判断条件
+        /*if(winScrollTop<ele_top-winHeight){
+         $(ele).removeClass(clsName);
+         }else */if((winScrollTop>ele_top-winHeight)&&(winScrollTop<ele_top+ele_height)){
+            if($(ele).attr('class')=="fang"){
+                shigong();
+            }
+            $(ele).addClass("animated fadeInUp");
+        }/*else{
+         $(ele).removeClass(clsName);
+         }*/
+    }
+    //获取前一次的滚动高度（这里是第一次）
+    var firstTop=$(window).scrollTop();
+    $(window,document).on("scroll",function(){
+        //每次滚动重新获取滚动高度
+        var lastTop=$(this).scrollTop();
+        //后一次滚动高度大于前一次滚动高，说明向下滚动，否则向上滚动！
+        if(lastTop>firstTop){
+            //加载对应的内容区域
+            toBottom("#gongyi .inner #fang");
+        };
+        //每次都将后一次的滚动高度赋值给前一次的滚动高度
+        firstTop=lastTop;
     });
 
-    function getElementPosition(e){
-        var x = 0, y = 0;
-        while(e != null) {
-            x += e.offsetLeft;
-            y += e.offsetTop;
-            e = e.offsetParent;
-        }
-        return { x: x, y: y };
-    }*/
 
     //所有的都为true时才可以提交
     var YuYueName=false,YuYuePhone=false
-
     //姓名不能为空
     $('#YuYueName').on("blur",function(){
         if($(this).val()){

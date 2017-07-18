@@ -4,26 +4,19 @@
 /*切换*/
 $(function(){
     var $li=$(".anli .anli-title li");
-    var $cont=$(".anli .inner .cont");
-
-    //var shijing=$("#shijing");
-    //var vr=$("#vr");
+    var $cont=$(".anli .inner .content-wrap .cont-wrap");
 
     $li.each(function(index){
         $(this).on("click",function(){
             $(this).addClass("active").siblings().removeClass("active");
             $cont.eq(index).fadeIn().siblings().fadeOut();
         });
+
+        $cont.eq(index).children(".geng").on("click",function(){
+            $cont.eq(index).find(".hide-ul").fadeIn();
+            $cont.eq(index).find(".geng").fadeOut();
+        });
+
     });
 
-   /* shijing.on("click",function(){
-        $(this).addClass("active").siblings.removeClass();
-        $("#cont1").css("disply","block");
-        $("#cont2").css("disply","none");
-    });
-    vr.on("click",function(){
-        $(this).addClass("active").siblings.removeClass();
-        $("#cont2").css("disply","block");
-        $("#cont2").css("disply","none");
-    });*/
 });

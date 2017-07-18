@@ -10,6 +10,7 @@
     <link type="text/css" rel="stylesheet" href="css/zhishi.css"/>
     <link type="text/css" rel="stylesheet" href="css/footer.css"/>
     <script src="js/jquery-1.8.0.js"></script>
+    <script src="js/header-hover.js"></script>
     <script src="js/textScroll.js"></script>
     <script src="js/index.js"></script>
     <script src="js/textScroll.js"></script>
@@ -25,8 +26,12 @@
                 <ul class="message">
                     <li>
                         <img src="images/ding.png"/>
-                        <span class="city">武汉</span>
+                        <span class="city">全国</span>
                         <span class="selec">[切换城市]</span>
+                        <div class="has-area">
+                            <ul>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <img src="images/phone.png"/>
@@ -35,16 +40,16 @@
                 </ul>
             </div>
         </div>
-        <ul class="nav" id="nav">
-            <div class="inner clearfix">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="xinfang.html">新房装修</a></li>
-                <li><a href="laofang.html">老房翻新</a></li>
-                <li><a href="zhuhuanli.html">住户案例</a></li>
-                <li><a href="baojia.html">装修报价</a></li>
-                <li class="active"><a href="zhishi.html">装修知识</a></li>
-            </div>
-        </ul>
+        <div class="nav" id="nav">
+            <ul class="inner clearfix">
+                <li><a href="index.html">首页</a><span></span></li>
+                <li><a href="xinfang.html">新房装修</a><span></span></li>
+                <li><a href="laofang.html">老房翻新</a><span></span></li>
+                <li><a href="zhuhuanli.html">住户案例</a><span></span></li>
+                <li><a href="baojia.html">装修报价</a><span></span></li>
+                <li class="active"><a href="zhishi.html">装修知识</a><span></span></li>
+            </ul>
+        </div>
     </div>
     <!--banner-->
     <div class="banner"></div>
@@ -63,10 +68,10 @@
                     <a class="quwen" href="zhuangxiuwenzhang.html">全文>></a>
                 </div>
                 <ul class="list">
-                    <li><a href="#">墙面贴画装饰方案赏析</a></li>
-                    <li><a href="#">办公室装修注意事项</a></li>
-                    <li><a href="#">装修设计的时候应该要注意的地方......</a></li>
-                    <li><a href="#">衣帽间装修应该注意什么？...</a></li>
+                    <li><a href="zhuangxiuwenzhang.html">墙面贴画装饰方案赏析</a></li>
+                    <li><a href="zhuangxiuwenzhang.html">办公室装修注意事项</a></li>
+                    <li><a href="zhuangxiuwenzhang.html">装修设计的时候应该要注意的地方......</a></li>
+                    <li><a href="zhuangxiuwenzhang.html">衣帽间装修应该注意什么？...</a></li>
                 </ul>
             </div>
         </div>
@@ -75,32 +80,38 @@
     <div class="redian">
         <div class="wrap">
             <div class="left">
-                <div class="pic">
-                    <img src="images/zs-redian-img1.png"/>
-                    <div class="light-box"></div>
-                </div>
-                <div class="txt">
-                    <p>室内墙纸的选购技巧</p>
-                </div>
+                <a href="zhuangxiuwenzhang.html">
+                    <div class="pic">
+                        <img src="images/zs-redian-img1.png"/>
+                        <div class="light-box"></div>
+                    </div>
+                    <div class="txt">
+                        <p>室内墙纸的选购技巧</p>
+                    </div>
+                </a>
             </div>
             <div class="right">
                 <div class="picText picText1">
-                    <div class="pic">
-                        <img src="images/zs-redian-img2.png"/>
-                        <div class="light-box"></div>
-                    </div>
-                    <div class="txt">
-                        <p>室内墙纸的选购技巧</p>
-                    </div>
+                    <a href="zhuangxiuwenzhang.html">
+                        <div class="pic">
+                            <img src="images/zs-redian-img2.png"/>
+                            <div class="light-box"></div>
+                        </div>
+                        <div class="txt">
+                            <p>室内墙纸的选购技巧</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="picText picText2">
-                    <div class="pic">
-                        <img src="images/zs-redian-img3.png"/>
-                        <div class="light-box"></div>
-                    </div>
-                    <div class="txt">
-                        <p>室内墙纸的选购技巧</p>
-                    </div>
+                    <a href="zhuangxiuwenzhang.html">
+                        <div class="pic">
+                            <img src="images/zs-redian-img3.png"/>
+                            <div class="light-box"></div>
+                        </div>
+                        <div class="txt">
+                            <p>室内墙纸的选购技巧</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="text">
                     <div class="tit">
@@ -110,11 +121,11 @@
                     </div>
                     <div class="list-wrap" id="list-wrap">
                         <ul class="list">
-                            <li><a href="#"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
-                            <li><a href="#"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
-                            <li><a href="#"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
-                            <li><a href="#"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
-                            <li><a href="#"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
+                            <li><a href="zhuangxiuwenzhang.html"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
+                            <li><a href="zhuangxiuwenzhang.html"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
+                            <li><a href="zhuangxiuwenzhang.html"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
+                            <li><a href="zhuangxiuwenzhang.html"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
+                            <li><a href="zhuangxiuwenzhang.html"><span class="date">2017-02-10</span>办公室装修注意事项办公室装修注意事项办公</a></li>
                         </ul>
                     </div>
                 </div>
@@ -132,31 +143,37 @@
             <div class="up clearfix">
                 <ul>
                     <li class="li-1">
-                        <div class="pic">
-                            <img src="images/zs-jiancai-img1.png"/>
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>室内墙纸的选购技巧</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-jiancai-img1.png"/>
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>室内墙纸的选购技巧</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="li-2">
-                        <div class="pic">
-                            <img src="images/zs-jiancai-img2.png"/>
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>室内墙纸的选购技巧</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-jiancai-img2.png"/>
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>室内墙纸的选购技巧</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="li-3">
-                        <div class="pic">
-                            <img src="images/zs-jiancai-img3.png"/>
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>室内墙纸的选购技巧</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-jiancai-img3.png"/>
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>室内墙纸的选购技巧</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -186,31 +203,37 @@
             <div class="cont clearfix">
                 <ul>
                     <li class="li-1">
-                        <div class="pic">
-                            <img src="images/zs-dapei-img1.png">
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>·北欧风格·</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-dapei-img1.png">
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>·北欧风格·</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="li-2">
-                        <div class="pic">
-                            <img src="images/zs-dapei-img2.png">
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>·北欧风格·</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-dapei-img2.png">
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>·北欧风格·</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="li-3">
-                        <div class="pic">
-                            <img src="images/zs-dapei-img3.png">
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>·北欧风格·</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-dapei-img3.png">
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>·北欧风格·</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -227,40 +250,48 @@
             <div class="cont clearfix">
                 <ul>
                     <li class="li-1">
-                        <div class="pic">
-                            <img src="images/zs-fengshui-img1.png"/>
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>房子装修禁忌事项有哪些？</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-fengshui-img1.png"/>
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>房子装修禁忌事项有哪些？</p>
+                            </div>
+                         </a>
                     </li>
                     <li class="li-2">
-                        <div class="pic">
-                            <img src="images/zs-fengshui-img2.png"/>
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>房子装修禁忌事项有哪些？</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-fengshui-img2.png"/>
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>房子装修禁忌事项有哪些？</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="li-3">
-                        <div class="pic">
-                            <img src="images/zs-fengshui-img1.png"/>
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>房子装修禁忌事项有哪些？</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-fengshui-img1.png"/>
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>房子装修禁忌事项有哪些？</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="li-4">
-                        <div class="pic">
-                            <img src="images/zs-fengshui-img2.png"/>
-                            <div class="light-box"></div>
-                        </div>
-                        <div class="txt">
-                            <p>房子装修禁忌事项有哪些？</p>
-                        </div>
+                        <a href="zhuangxiuwenzhang.html">
+                            <div class="pic">
+                                <img src="images/zs-fengshui-img2.png"/>
+                                <div class="light-box"></div>
+                            </div>
+                            <div class="txt">
+                                <p>房子装修禁忌事项有哪些？</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -301,9 +332,17 @@
                         <span></span>
                         <input type="text" placeholder="请输入您的手机号" maxlength="11" id="BJnumber"/>
                     </label>
-                    <label class="clearfix">
+                   <!-- <label class="clearfix">
                         <input type="text" placeholder="请输入验证号码" id="BJrandnum"/>
                         <button type="button" class="yanzheng">验证号码</button>
+                    </label>-->
+                    <label class="clearfix BJ-quyu">
+                        <img src="images/baojia-ico4.png"/>
+                        <span></span>
+                        <div id="BJ-area" class="input">全国</div>
+                        <ul class="select-quyu">
+                            <li>全国</li>
+                        </ul>
                     </label>
                     <button type="button" class="jisuan" id="liji-baojia">立即报价</button>
                     <a href="#" class="zixun">详情咨询客服报价>></a>
@@ -311,16 +350,6 @@
             </form>
             <div class="people" id="people">
                 <div class="thead">累计已有<strong>5435</strong>位业主报价成功</div>
-                <!--<marquee direction="up" scrollamount="5" class="p-scroll">
-                    <table>
-                        <tbody>
-                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
-                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
-                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
-                        <tr><td>段**</td><td>181****2456</td><td>预约成功</td></tr>
-                        </tbody>
-                    </table>
-                </marquee>-->
                 <div class="people-cont" id="people-cont">
                     <ul>
                         <li><span>段**</span><span>181****2456</span><span>预约成功</span></li>
@@ -373,14 +402,14 @@
     $(function() {
         $('#list-wrap').vTicker({
             speed: 500,
-            pause: 800,
+            pause: 2500,
             animation: 'fade',
             mousePause: true,
             showItems: 5
         });
         $('#people-cont').vTicker({
             speed: 500,
-            pause: 800,
+            pause: 2000,
             animation: 'fade',
             mousePause: true,
             showItems:4

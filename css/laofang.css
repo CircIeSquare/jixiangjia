@@ -97,7 +97,6 @@
 .bannerIE #banner-ol .ac{background:#007AFF;}
 
 
-
 /*报价*/
 .baojia{width:100%;}
 .baojia .inner{height:232px;margin:84px auto;}
@@ -126,18 +125,21 @@
 .baojia .inner form .right label .yanzheng{width:75px;height:47px;background:#ecca13;border-radius:0 8px 8px 0;float:right;display:inline;}
 .baojia .inner form .right .jisuan{width:100%;width:93%\9;height:43px;line-height:43px;border-radius:8px;background:#ecca13;cursor:pointer;}
 .baojia .inner form .right .zixun{width:100%;height:31px;line-height:31px;color:#747474;display:inline-block;text-align:center;}
+
+.baojia .inner form .right .BJ-quyu{position:relative;color:#515151;}
+.baojia .inner form .right .BJ-quyu .input{
+    float:left;width:120px;padding:5px 10px;height:35px;line-height:35px;color:#515151;
+    border-radius:8px 0 0 8px;cursor:pointer;}
+.baojia .inner form .right .BJ-quyu .select-quyu{width:140px;border:1px solid #0c0c0c;position:absolute;top:49px;left:45px;background:#fff;display:none;}
+.baojia .inner form .right .BJ-quyu .select-quyu li{width:120px;padding:0 10px;height:23px;line-height:23px;font-size:14px;margin:0;text-align:left;}
+.baojia .inner form .right .BJ-quyu .select-quyu li:hover{background:#ECCA13;color:#fff;}
 /*报价 右*/
 .baojia .inner .people{float:left;width:230px;margin:30px 0 0 37px;border:1px solid #f5c71a;text-align:center;overflow:hidden;}
 .baojia .inner .people marquee{width:100%;height:120px;margin:0;padding:0;display:block;padding-left:10px;overflow:hidden;}
 .baojia .inner .people table{width:100%;overflow:hidden;}
 .baojia .inner .people .thead{width:100%;height:59px;line-height:59px;background:#f5c71a;color:#fff;position:relative;font-size:16px;}
 .baojia .inner .people .thead strong{color:#000;font-size:18px;}
-/*
-.baojia .inner .people table tbody{}
-.baojia .inner .people table tbody tr{color:#535353;height:28px;line-height:28px;font-size:16px;}
-.baojia .inner .people table tbody tr td:nth-child(1){width:20%;}
-.baojia .inner .people table tbody tr td:nth-child(2){width:40%;}
-.baojia .inner .people table tbody tr td:nth-child(3){width:40%;color:#f5c71a;}*/
+
 .baojia .inner .people .people-cont{width:228px;height:122px;border:1px solid #f5c71a;overflow:hidden;position:relative;}
 .baojia .inner .people .people-cont ul{position:absolute;left:0;width:100%;}
 .baojia .inner .people .people-cont ul li{color:#535353;height:28px;line-height:28px;font-size:16px;}

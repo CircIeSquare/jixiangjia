@@ -60,7 +60,7 @@ $(function(){
 
         var formt=$(".jisuanqi #form #formt")[0];
         if(formt==undefined){
-            $(".jisuanqi #form").append(formtContent).slideDown(1500,"swing");
+            $(".jisuanqi #form").append(formtContent).slideDown(800,"swing");
 
             //自定义的选择区域下拉列表
             var s_title=$("#quyu i");
@@ -239,7 +239,7 @@ $(function(){
 
         var formt=$(".jisuanqi #form #formt")[0];
         if(formt!==undefined){
-            $(".jisuanqi #form").slideUp(1500,"swing",function(){
+            $(".jisuanqi #form").slideUp(800,"swing",function(){
                 //$(".jisuanqi #form").html("");
                 $(".jisuanqi #formt").remove();
             });

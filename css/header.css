@@ -32,17 +32,25 @@ body{font-family:"arial","Microsoft YaHei";width:100%;min-width:1024px;overflow-
 /*top*/
 .header .top{width:100%;margin:0 auto;height:70px;border-bottom:1px solid #ededed;}
 .header .top .inner .logo{width:235px;height:35px;display:block;float:left;padding:16px 0 0 59px;}
-.header .top ul{width:345px;height:70px;line-height:70px;float:right;}
-.header .top ul li{float:left;height:70px;line-height:70px;padding-right:30px;color:#f4c422;}
-.header .top ul li img{padding:23px 5px 0 0;float:left;}
-.header .top ul li .city{font-weight:bold;font-size:16px;}
-.header .top ul li .selec{color:#3a3a38;cursor:pointer;}
-.header .top ul li .phone{font-weight:bold;font-size:18px;}
+.header .top .message{height:70px;line-height:70px;float:right;}
+.header .top .message li{float:left;height:70px;line-height:70px;padding-right:30px;color:#f4c422;position:relative;}
+.header .top .message li:nth-child(1){cursor:pointer;}
+.header .top .message li img{padding:23px 5px 0 0;float:left;}
+.header .top .message li .city{font-weight:bold;font-size:16px;}
+.header .top .message li .selec{color:#3a3a38;cursor:pointer;}
+.header .top .message li .phone{font-weight:bold;font-size:18px;}
+.header .top .message li .has-area{background:#fff;position:absolute;left:0;top:70px;width:325px;padding:27px 20px 17px 0px;border:1px solid #f0f0f0;transition:all 0.3s linear;z-index:30;display:none;}
+.header .top .message li .has-area ul{margin-left:17px;}
+.header .top .message li .has-area ul li{height:30px;line-height:30px;padding:0 15px;margin:0 0 9px 0;font-size:14px;color:#434343;}
+.header .top .message li .has-area ul li:hover{background:#f4c422;color:#fff;}
+.header .top .message li:hover .has-area{display:block;}
+
 /*nav*/
 .header #nav{width:100%;min-width:1024px;height:45px;margin-left:60px;font-size:16px;}
-.header #nav li{float:left;height:45px;width:70px;margin-right:64px;text-align:center;}
+.header #nav li{float:left;height:45px;width:70px;margin-right:64px;text-align:center;position:relative;}
 .header #nav li a{display:block;width:70px;height:42px;line-height:42px;margin-right:64px;color:#050505;}
-.header #nav li:hover,.header #nav .active{border-bottom:3px solid #645f63;}
+/*.header #nav li:hover,*/.header #nav .active{border-bottom:3px solid #645f63;}
+.header #nav li span{display:block;position:absolute; width:0px; height:0px;background:#645f63;top:45px; left:50%;}
 
 @keyframes lineRun {
     0%{width:0px}
