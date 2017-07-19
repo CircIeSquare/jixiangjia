@@ -4,7 +4,7 @@ ul,ol,li{list-style:none;}
 img{font-size:0;}
 input,button{border:none;}
 
-body{font-family:"arial","Microsoft YaHei";width:100%;min-width:1024px;overflow-x:hidden;}
+body{font-family:"arial","Microsoft YaHei";width:100%;min-width:1024px;overflow-x:hidden;margin:0 auto;position:relative;}
 
 /*@font-face {*/
     /*font-family:"汉仪力量黑简";*/
